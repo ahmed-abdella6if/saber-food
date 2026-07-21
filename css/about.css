@@ -1,0 +1,800 @@
+/* =================================
+   SABER FOOD - ABOUT PAGE STYLES
+================================= */
+
+
+/* =================================
+   ABOUT HERO
+================================= */
+
+.about-hero {
+
+    min-height:70vh;
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    background:
+
+    linear-gradient(
+        rgba(0,0,0,.55),
+        rgba(0,0,0,.55)
+    ),
+
+    url("../images/about/about-hero.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    color:white;
+
+}
+
+
+
+.about-hero .hero-content {
+
+    max-width:900px;
+
+    padding-top:80px;
+
+}
+
+
+
+.about-hero h1 {
+
+    font-size:58px;
+
+    line-height:1.2;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.about-hero p {
+
+    font-size:19px;
+
+    color:#eee;
+
+    max-width:750px;
+
+    margin:auto;
+
+}
+
+
+
+.hero-tag {
+
+
+    display:inline-block;
+
+    color:#f5d76e;
+
+    font-size:14px;
+
+    letter-spacing:2px;
+
+    font-weight:600;
+
+    margin-bottom:20px;
+
+}
+
+
+
+
+/* =================================
+   STORY SECTION
+================================= */
+
+
+.story {
+
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(2,1fr);
+
+    gap:70px;
+
+    align-items:center;
+
+}
+
+
+
+.story-image {
+
+
+    position:relative;
+
+}
+
+
+
+.story-image img {
+
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+
+}
+
+
+
+.story-image::before {
+
+
+    content:"";
+
+    position:absolute;
+
+    width:130px;
+
+    height:130px;
+
+    background:var(--secondary-color);
+
+    bottom:-25px;
+
+    left:-25px;
+
+    border-radius:20px;
+
+    z-index:-1;
+
+}
+
+
+
+.story-content h2 {
+
+
+    font-size:42px;
+
+    color:var(--dark-color);
+
+    margin-bottom:25px;
+
+}
+
+
+
+.story-content p {
+
+
+    color:#666;
+
+    margin-bottom:20px;
+
+}
+
+
+
+/* =================================
+   MISSION & VISION
+================================= */
+
+
+.mission {
+
+
+    background:var(--light-color);
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(2,1fr);
+
+    gap:30px;
+
+}
+
+
+
+.mission-card {
+
+
+    background:white;
+
+    padding:45px 35px;
+
+    border-radius:var(--border-radius);
+
+    box-shadow:var(--shadow);
+
+    text-align:center;
+
+    transition:var(--transition);
+
+}
+
+
+
+.mission-card:hover {
+
+
+    transform:translateY(-8px);
+
+}
+
+
+
+.mission-card i {
+
+
+    width:80px;
+
+    height:80px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin:0 auto 25px;
+
+    border-radius:50%;
+
+    background:
+
+    rgba(27,94,32,.1);
+
+    color:var(--primary-color);
+
+    font-size:35px;
+
+}
+
+
+
+.mission-card h3 {
+
+
+    font-size:28px;
+
+    color:var(--dark-color);
+
+    margin-bottom:15px;
+
+}
+
+
+
+.mission-card p {
+
+
+    color:#666;
+
+}
+
+
+
+/* =================================
+   CORE VALUES
+================================= */
+
+
+.values {
+
+
+    background:white;
+
+}
+
+
+
+.values-grid {
+
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+
+
+.value-card {
+
+
+    padding:35px 25px;
+
+    border-radius:var(--border-radius);
+
+    background:white;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+}
+
+
+
+.value-card:hover {
+
+
+    transform:translateY(-10px);
+
+}
+
+
+
+.value-card i {
+
+
+    font-size:35px;
+
+    color:var(--secondary-color);
+
+    margin-bottom:20px;
+
+}
+
+
+
+.value-card h3 {
+
+
+    color:var(--dark-color);
+
+    font-size:22px;
+
+    margin-bottom:12px;
+
+}
+
+
+
+.value-card p {
+
+
+    color:#666;
+
+}
+/* =================================
+   INDUSTRIES SECTION
+================================= */
+
+
+.industries {
+
+
+    background:var(--light-color);
+
+}
+
+
+
+.industry-grid {
+
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(6,1fr);
+
+    gap:20px;
+
+}
+
+
+
+.industry-card {
+
+
+    background:white;
+
+    padding:35px 15px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+}
+
+
+
+.industry-card:hover {
+
+
+    transform:translateY(-8px);
+
+    background:var(--primary-color);
+
+    color:white;
+
+}
+
+
+
+.industry-card i {
+
+
+    font-size:35px;
+
+    color:var(--primary-color);
+
+    margin-bottom:15px;
+
+    transition:var(--transition);
+
+}
+
+
+
+.industry-card:hover i {
+
+
+    color:white;
+
+}
+
+
+
+.industry-card h3 {
+
+
+    font-size:16px;
+
+    color:var(--dark-color);
+
+}
+
+
+
+.industry-card:hover h3 {
+
+
+    color:white;
+
+}
+
+
+
+
+
+/* =================================
+   WHY CHOOSE SABER FOOD
+================================= */
+
+
+.why-us {
+
+
+    background:white;
+
+}
+
+
+
+.why-us .cards {
+
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+
+
+.why-us .card {
+
+
+    background:white;
+
+    padding:35px 25px;
+
+    border-radius:var(--border-radius);
+
+    box-shadow:var(--shadow);
+
+    text-align:center;
+
+    transition:var(--transition);
+
+}
+
+
+
+.why-us .card:hover {
+
+
+    transform:translateY(-10px);
+
+}
+
+
+
+.why-us .card i {
+
+
+    font-size:40px;
+
+    color:var(--primary-color);
+
+    margin-bottom:20px;
+
+}
+
+
+
+.why-us .card h3 {
+
+
+    font-size:21px;
+
+    color:var(--dark-color);
+
+    margin-bottom:12px;
+
+}
+
+
+
+.why-us .card p {
+
+
+    color:#666;
+
+    font-size:15px;
+
+}
+
+
+
+
+
+/* =================================
+   ABOUT CTA
+================================= */
+
+
+.contact {
+
+
+    background:
+
+    linear-gradient(
+
+    90deg,
+
+    var(--primary-color),
+
+    #2e7d32
+
+    );
+
+    color:white;
+
+    text-align:center;
+
+}
+
+
+
+.contact h2 {
+
+
+    font-size:42px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.contact p {
+
+
+    max-width:700px;
+
+    margin:0 auto 30px;
+
+    color:#eee;
+
+}
+
+
+
+.contact .btn-primary {
+
+
+    background:var(--secondary-color);
+
+}
+
+
+
+.contact .btn-primary:hover {
+
+
+    background:#b38b18;
+
+}
+
+
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+
+@media(max-width:1100px){
+
+
+    .industry-grid {
+
+
+        grid-template-columns:
+
+        repeat(3,1fr);
+
+    }
+
+
+    .why-us .cards {
+
+
+        grid-template-columns:
+
+        repeat(2,1fr);
+
+    }
+
+
+    .values-grid {
+
+
+        grid-template-columns:
+
+        repeat(2,1fr);
+
+    }
+
+
+}
+
+
+
+@media(max-width:900px){
+
+
+    .story {
+
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .mission {
+
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .about-hero h1 {
+
+
+        font-size:45px;
+
+    }
+
+
+}
+
+
+
+@media(max-width:600px){
+
+
+    .about-hero {
+
+
+        min-height:60vh;
+
+    }
+
+
+
+    .about-hero h1 {
+
+
+        font-size:34px;
+
+    }
+
+
+
+    .about-hero p {
+
+
+        font-size:16px;
+
+    }
+
+
+
+    .story-content h2 {
+
+
+        font-size:32px;
+
+    }
+
+
+
+    .values-grid {
+
+
+        grid-template-columns:1fr;
+
+    }
+
+
+
+    .industry-grid {
+
+
+        grid-template-columns:
+
+        repeat(2,1fr);
+
+    }
+
+
+
+    .why-us .cards {
+
+
+        grid-template-columns:1fr;
+
+    }
+
+
+
+    .contact h2 {
+
+
+        font-size:30px;
+
+    }
+
+
+}

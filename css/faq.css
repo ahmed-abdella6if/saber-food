@@ -1,0 +1,287 @@
+/* =================================
+   SABER FOOD - FAQ PAGE CSS
+================================= */
+
+
+/* HERO */
+
+.faq-hero {
+
+    min-height:60vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    color:white;
+
+    background:
+
+    linear-gradient(
+        rgba(0,0,0,.55),
+        rgba(0,0,0,.55)
+    ),
+
+    url("../images/faq/faq-hero.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+
+.faq-hero-content {
+
+    max-width:800px;
+
+    padding-top:80px;
+
+}
+
+
+.faq-hero h1 {
+
+    font-size:58px;
+
+    margin:20px 0;
+
+}
+
+
+.faq-hero p {
+
+    font-size:18px;
+
+    color:#eee;
+
+}
+
+
+
+
+
+/* FAQ SECTION */
+
+
+.faq-section {
+
+    background:white;
+
+}
+
+
+
+.faq-container {
+
+    width:90%;
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+
+
+.faq-item {
+
+    background:white;
+
+    border-radius:15px;
+
+    margin-bottom:20px;
+
+    box-shadow:var(--shadow);
+
+    overflow:hidden;
+
+}
+
+
+
+.faq-question {
+
+
+    width:100%;
+
+    border:none;
+
+    background:white;
+
+    padding:25px 30px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    color:var(--dark-color);
+
+}
+
+
+
+.faq-question i {
+
+    color:var(--primary-color);
+
+    transition:.3s;
+
+}
+
+
+
+.faq-answer {
+
+
+    max-height:0;
+
+    overflow:hidden;
+
+    transition:.4s ease;
+
+}
+
+
+
+.faq-answer p {
+
+
+    padding:0 30px 25px;
+
+    color:#666;
+
+}
+
+
+
+
+
+.faq-item.active .faq-answer {
+
+
+    max-height:200px;
+
+}
+
+
+
+.faq-item.active .faq-question i {
+
+
+    transform:rotate(180deg);
+
+}
+
+
+
+
+
+/* CTA */
+
+
+.faq-cta {
+
+
+    text-align:center;
+
+    background:
+
+    linear-gradient(
+
+    90deg,
+
+    var(--primary-color),
+
+    #2e7d32
+
+    );
+
+    color:white;
+
+}
+
+
+
+.faq-cta h2 {
+
+
+    font-size:42px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.faq-cta p {
+
+
+    color:#eee;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.faq-cta .btn-primary {
+
+
+    background:var(--secondary-color);
+
+}
+
+
+
+
+
+/* RESPONSIVE */
+
+
+@media(max-width:700px){
+
+
+.faq-hero h1 {
+
+    font-size:38px;
+
+}
+
+
+.faq-question {
+
+    font-size:16px;
+
+    padding:20px;
+
+}
+
+
+.faq-answer p {
+
+    padding:0 20px 20px;
+
+}
+
+
+.faq-cta h2 {
+
+    font-size:30px;
+
+}
+
+
+}
