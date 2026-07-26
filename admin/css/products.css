@@ -1,0 +1,1485 @@
+/* ======================================================
+   SABER FOOD ADMIN
+   PRODUCTS.CSS
+====================================================== */
+
+/* ===============================
+   PAGE LAYOUT
+=============================== */
+
+.content{
+
+    padding:40px;
+
+    min-height:100vh;
+
+    background:#f6f8fb;
+
+}
+
+/* ===============================
+   TOPBAR
+=============================== */
+
+.topbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:35px;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+}
+
+.topbar-left h1{
+
+    font-size:32px;
+
+    color:#1f2937;
+
+    margin-bottom:6px;
+
+}
+
+.topbar-left small{
+
+    color:#6b7280;
+
+    font-size:15px;
+
+}
+
+.topbar-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.topbar-right input{
+
+    width:280px;
+
+    padding:14px 18px;
+
+    border:1px solid #d9dee7;
+
+    border-radius:12px;
+
+    outline:none;
+
+    transition:.3s;
+
+    font-size:15px;
+
+    background:white;
+
+}
+
+.topbar-right input:focus{
+
+    border-color:#1b5e20;
+
+    box-shadow:0 0 0 4px rgba(27,94,32,.1);
+
+}
+
+/* ===============================
+   BUTTONS
+=============================== */
+
+.btn{
+
+    border:none;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    border-radius:12px;
+
+    padding:14px 22px;
+
+    transition:.3s;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    font-size:15px;
+
+}
+
+.btn-primary{
+
+    background:#1b5e20;
+
+    color:white;
+
+}
+
+.btn-primary:hover{
+
+    background:#154918;
+
+}
+
+.btn-secondary{
+
+    background:#eceff3;
+
+    color:#333;
+
+}
+
+.btn-secondary:hover{
+
+    background:#dde2e8;
+
+}
+
+.btn-danger{
+
+    background:#d62828;
+
+    color:white;
+
+}
+
+.btn-danger:hover{
+
+    background:#b71c1c;
+
+}
+
+/* ===============================
+   PRODUCT STATS
+=============================== */
+
+.product-stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:22px;
+
+    margin-bottom:35px;
+
+}
+
+.mini-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:28px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+
+    transition:.3s;
+
+}
+
+.mini-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.mini-card h2{
+
+    font-size:32px;
+
+    color:#111827;
+
+    margin-bottom:8px;
+
+}
+
+.mini-card p{
+
+    color:#6b7280;
+
+    font-size:15px;
+
+}
+
+.mini-card i{
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#eef7ef;
+
+    color:#1b5e20;
+
+    font-size:28px;
+
+}
+
+/* ===============================
+   PANELS
+=============================== */
+
+.panel{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    margin-bottom:30px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+
+}
+
+.panel-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+}
+
+.panel-header h2{
+
+    font-size:24px;
+
+    color:#111827;
+
+}
+
+.panel-header span{
+
+    color:#6b7280;
+
+    font-size:15px;
+
+}
+
+
+
+
+
+/* ======================================================
+   TABLE
+====================================================== */
+
+.table-responsive{
+
+    width:100%;
+
+    overflow-x:auto;
+
+}
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+thead{
+
+    background:#f7f8fa;
+
+}
+
+thead th{
+
+    padding:18px;
+
+    text-align:left;
+
+    font-size:14px;
+
+    color:#6b7280;
+
+    font-weight:600;
+
+    white-space:nowrap;
+
+}
+
+tbody td{
+
+    padding:18px;
+
+    border-top:1px solid #edf0f5;
+
+    vertical-align:middle;
+
+}
+
+tbody tr{
+
+    transition:.25s;
+
+}
+
+tbody tr:hover{
+
+    background:#fafafa;
+
+}
+
+/* ======================================================
+   PRODUCT IMAGE
+====================================================== */
+
+.product-image,
+
+.product-thumb{
+
+    width:70px;
+
+    height:70px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+
+    border:1px solid #eee;
+
+}
+
+/* ======================================================
+   STATUS
+====================================================== */
+
+.status{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:7px 14px;
+
+    border-radius:999px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.status.approved,
+
+.status.active{
+
+    background:#e8f7ed;
+
+    color:#1b8f3a;
+
+}
+
+.status.pending{
+
+    background:#fff6dd;
+
+    color:#c08b00;
+
+}
+
+.status.rejected{
+
+    background:#ffe7e7;
+
+    color:#d62828;
+
+}
+
+/* ======================================================
+   ACTION BUTTONS
+====================================================== */
+
+.table-actions,
+
+.table-buttons{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.edit-btn,
+
+.view-btn,
+
+.delete-btn{
+
+    width:40px;
+
+    height:40px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    transition:.3s;
+
+    font-size:15px;
+
+}
+
+.edit-btn{
+
+    background:#eef7ef;
+
+    color:#1b5e20;
+
+}
+
+.edit-btn:hover{
+
+    background:#1b5e20;
+
+    color:white;
+
+}
+
+.view-btn{
+
+    background:#eef4ff;
+
+    color:#2563eb;
+
+}
+
+.view-btn:hover{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+.delete-btn{
+
+    background:#ffecec;
+
+    color:#d62828;
+
+}
+
+.delete-btn:hover{
+
+    background:#d62828;
+
+    color:white;
+
+}
+
+/* ======================================================
+   EMPTY TABLE
+====================================================== */
+
+.empty-state{
+
+    text-align:center;
+
+    padding:60px 20px;
+
+    color:#8a8f98;
+
+}
+
+.empty-state i{
+
+    font-size:55px;
+
+    margin-bottom:20px;
+
+    color:#d1d5db;
+
+}
+
+.empty-state h3{
+
+    margin-bottom:10px;
+
+    color:#374151;
+
+}
+
+.empty-state p{
+
+    font-size:15px;
+
+}
+/* ======================================================
+   PRODUCT DRAWER
+====================================================== */
+
+.drawer-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.45);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.3s;
+
+    z-index:998;
+
+}
+
+.drawer-overlay.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+.product-drawer{
+
+    position:fixed;
+
+    top:0;
+
+    right:-700px;
+
+    width:650px;
+
+    max-width:100%;
+
+    height:100vh;
+
+    background:#ffffff;
+
+    overflow-y:auto;
+
+    box-shadow:-12px 0 40px rgba(0,0,0,.18);
+
+    transition:.35s ease;
+
+    z-index:999;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.product-drawer{
+
+    right:-650px;
+
+    transition:.35s;
+
+}
+
+.product-drawer.open{
+
+    right:0;
+
+}
+
+.drawer-overlay{
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.35s;
+
+}
+
+.drawer-overlay.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+/* ======================================================
+   DRAWER HEADER
+====================================================== */
+
+.drawer-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:25px 30px;
+
+    border-bottom:1px solid #eceff3;
+
+    background:#fff;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:20;
+
+}
+
+.drawer-header h2{
+
+    font-size:24px;
+
+    color:#111827;
+
+}
+
+.drawer-header button{
+
+    width:45px;
+
+    height:45px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#f3f4f6;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    font-size:18px;
+
+}
+
+.drawer-header button:hover{
+
+    background:#e5e7eb;
+
+}
+
+/* ======================================================
+   FORM
+====================================================== */
+
+#productForm{
+
+    padding:30px;
+
+}
+
+.drawer-section{
+
+    margin-bottom:35px;
+
+}
+
+.drawer-section h3{
+
+    margin-bottom:18px;
+
+    font-size:18px;
+
+    color:#111827;
+
+    font-weight:600;
+
+}
+
+/* ======================================================
+   FORM GRID
+====================================================== */
+
+.form-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.form-group label{
+
+    margin-bottom:8px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    color:#374151;
+
+}
+
+.form-group input,
+
+.form-group select,
+
+textarea{
+
+    width:100%;
+
+    padding:14px 16px;
+
+    border:1px solid #d9dee7;
+
+    border-radius:12px;
+
+    outline:none;
+
+    transition:.3s;
+
+    background:#fff;
+
+    font-size:15px;
+
+}
+
+textarea{
+
+    resize:vertical;
+
+    min-height:130px;
+
+}
+
+.form-group input:focus,
+
+.form-group select:focus,
+
+textarea:focus{
+
+    border-color:#1b5e20;
+
+    box-shadow:0 0 0 4px rgba(27,94,32,.08);
+
+}
+/* ======================================================
+   IMAGE UPLOAD
+====================================================== */
+
+.image-upload{
+
+    position:relative;
+
+    border:2px dashed #cfd8dc;
+
+    border-radius:18px;
+
+    background:#fafafa;
+
+    padding:40px;
+
+    text-align:center;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.image-upload:hover{
+
+    border-color:#1b5e20;
+
+    background:#f3faf4;
+
+}
+
+.image-upload input{
+
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+
+    height:100%;
+
+    opacity:0;
+
+    cursor:pointer;
+
+}
+
+.image-upload label{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:15px;
+
+    pointer-events:none;
+
+}
+
+.image-upload i{
+
+    font-size:55px;
+
+    color:#1b5e20;
+
+}
+
+.image-upload p{
+
+    color:#555;
+
+    font-weight:500;
+
+}
+
+/* ======================================================
+   IMAGE PREVIEW
+====================================================== */
+
+.image-preview{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fill,minmax(110px,1fr));
+
+    gap:15px;
+
+    margin-top:20px;
+
+}
+
+.preview-placeholder{
+
+    height:110px;
+
+    border:2px dashed #d9dee7;
+
+    border-radius:15px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#9ca3af;
+
+}
+
+.preview-placeholder i{
+
+    font-size:32px;
+
+    margin-bottom:8px;
+
+}
+
+.preview-image{
+
+    width:100%;
+
+    height:110px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    border:1px solid #e5e7eb;
+
+}
+
+/* ======================================================
+   PRODUCT SETTINGS
+====================================================== */
+
+.switch-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+}
+
+.switch-grid label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:14px;
+
+    background:#f9fafb;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.switch-grid label:hover{
+
+    background:#eef7ef;
+
+}
+
+.switch-grid input{
+
+    width:18px;
+
+    height:18px;
+
+    accent-color:#1b5e20;
+
+}
+
+/* ======================================================
+   LIVE PREVIEW CARD
+====================================================== */
+
+.preview-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    border:1px solid #e5e7eb;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+
+}
+
+.preview-card img{
+
+    width:100%;
+
+    height:240px;
+
+    object-fit:cover;
+
+    background:#f3f4f6;
+
+}
+
+.preview-card h4{
+
+    padding:18px 20px 5px;
+
+    font-size:22px;
+
+    color:#111827;
+
+}
+
+.preview-card p{
+
+    padding:0 20px;
+
+    color:#6b7280;
+
+    margin-bottom:10px;
+
+}
+
+.preview-price{
+
+    display:inline-block;
+
+    margin:0 20px 20px;
+
+    background:#1b5e20;
+
+    color:white;
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    font-weight:700;
+
+}
+
+/* ======================================================
+   DRAWER BUTTONS
+====================================================== */
+
+.drawer-buttons{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:15px;
+
+    margin-top:35px;
+
+    padding-top:25px;
+
+    border-top:1px solid #eceff3;
+
+}
+
+.drawer-buttons .btn{
+
+    min-width:150px;
+
+    justify-content:center;
+
+}
+/* ======================================================
+   DELETE MODAL
+====================================================== */
+
+.modal-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.45);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.3s;
+
+    z-index:2000;
+
+}
+
+.modal-overlay.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+.delete-modal{
+
+    width:420px;
+
+    max-width:90%;
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.18);
+
+}
+
+.delete-icon{
+
+    width:85px;
+
+    height:85px;
+
+    margin:auto;
+
+    margin-bottom:20px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#ffeaea;
+
+    color:#d62828;
+
+    font-size:34px;
+
+}
+
+.delete-modal h2{
+
+    color:#111827;
+
+    margin-bottom:10px;
+
+}
+
+.delete-modal p{
+
+    color:#6b7280;
+
+    margin-bottom:15px;
+
+}
+
+.delete-modal strong{
+
+    display:block;
+
+    margin-bottom:25px;
+
+    color:#111827;
+
+}
+
+.modal-buttons{
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+.modal-buttons .btn{
+
+    flex:1;
+
+    justify-content:center;
+
+}
+
+/* ======================================================
+   TOASTS
+====================================================== */
+
+.toast{
+
+    position:fixed;
+
+    right:30px;
+
+    bottom:30px;
+
+    min-width:320px;
+
+    background:#fff;
+
+    border-radius:15px;
+
+    padding:18px 22px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.12);
+
+    transform:translateY(120px);
+
+    opacity:0;
+
+    transition:.35s;
+
+    z-index:3000;
+
+}
+
+.toast.show{
+
+    transform:translateY(0);
+
+    opacity:1;
+
+}
+
+.toast i{
+
+    font-size:22px;
+
+}
+
+.toast.success{
+
+    border-left:5px solid #16a34a;
+
+}
+
+.toast.success i{
+
+    color:#16a34a;
+
+}
+
+.toast.error{
+
+    border-left:5px solid #dc2626;
+
+}
+
+.toast.error i{
+
+    color:#dc2626;
+
+}
+
+/* ======================================================
+   LOADING SCREEN
+====================================================== */
+
+.loading-screen{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(255,255,255,.9);
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.3s;
+
+    z-index:4000;
+
+}
+
+.loading-screen.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+.loader{
+
+    width:65px;
+
+    height:65px;
+
+    border:6px solid #e5e7eb;
+
+    border-top-color:#1b5e20;
+
+    border-radius:50%;
+
+    animation:spin 1s linear infinite;
+
+    margin-bottom:20px;
+
+}
+
+@keyframes spin{
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/* ======================================================
+   RESPONSIVE
+====================================================== */
+
+@media(max-width:1200px){
+
+    .product-stats{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:992px){
+
+    .product-drawer{
+
+        width:100%;
+
+    }
+
+    .form-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .switch-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .content{
+
+        padding:20px;
+
+    }
+
+    .topbar{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+    .topbar-right{
+
+        width:100%;
+
+        flex-direction:column;
+
+    }
+
+    .topbar-right input{
+
+        width:100%;
+
+    }
+
+    .product-stats{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+  
+
+    .drawer-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .modal-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .toast{
+
+        right:15px;
+
+        left:15px;
+
+        min-width:auto;
+
+    }
+
+}
+
+
+.filter-btn{
+
+    padding:10px 18px;
+
+    border:none;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    background:#ececec;
+
+    transition:.3s;
+
+}
+
+.filter-btn.active{
+
+    background:#0b6b3a;
+
+    color:white;
+
+}

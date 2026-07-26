@@ -48,7 +48,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 
 <div class="logo">
 
-<span>Saber</span> Food
+    <span class="company-name"></span>
 
 </div>
 
@@ -208,11 +208,7 @@ Location
 </h3>
 
 
-<p>
-
-Italy
-
-</p>
+<p class="company-address"></p>
 
 </div>
 
@@ -237,12 +233,7 @@ Email
 
 </h3>
 
-
-<p>
-
-sales@saberfood.it
-
-</p>
+<a class="company-email"></a>
 
 </div>
 
@@ -268,11 +259,8 @@ Phone
 </h3>
 
 
-<p>
+<a class="company-phone"></a>
 
-+39 XXX XXX XXXX
-
-</p>
 
 </div>
 
@@ -294,6 +282,8 @@ Phone
 <h3>
 
 WhatsApp
+<a class="company-phone"></a>
+
 
 </h3>
 
@@ -333,13 +323,14 @@ Request A Quote
 
 
 
-<form>
+<form id="quoteForm">
 
 
 <div class="form-group">
 
 
 <input type="text"
+id="company_name"
 placeholder="Company Name"
 required>
 
@@ -353,6 +344,7 @@ required>
 
 
 <input type="text"
+id="contact_name"
 placeholder="Your Name"
 required>
 
@@ -367,6 +359,7 @@ required>
 
 
 <input type="email"
+id="email"
 placeholder="Business Email"
 required>
 
@@ -381,6 +374,7 @@ required>
 
 
 <input type="tel"
+id="phone"
 placeholder="Phone Number">
 
 
@@ -393,45 +387,59 @@ placeholder="Phone Number">
 <div class="form-group">
 
 
-<select>
+<input type="text"
+id="country"
+placeholder="Country">
 
 
-<option>
+</div>
+
+
+
+
+
+<div class="form-group">
+
+
+<select id="product_category">
+
+
+<option value="">
 
 Select Product Category
 
 </option>
 
 
-<option>
+<option value="Rice">
 
 Rice
 
 </option>
 
 
-<option>
+<option value="Frozen Products">
 
 Frozen Products
 
 </option>
 
 
-<option>
+<option value="Spices">
 
 Spices
 
 </option>
 
 
-<option>
+<option value="Canned Food">
 
 Canned Food
 
 </option>
 
 
-<option>
+<option value="Sweets">
 
 Sweets
 
@@ -451,6 +459,7 @@ Sweets
 
 
 <textarea rows="5"
+id="notes"
 placeholder="Tell us about your requirements"></textarea>
 
 
@@ -460,7 +469,7 @@ placeholder="Tell us about your requirements"></textarea>
 
 
 
-<button class="btn-primary">
+<button type="submit" class="btn-primary" id="submitQuote">
 
 Send Request
 
@@ -486,36 +495,7 @@ Send Request
 
 
 
-<!-- MAP PLACEHOLDER -->
 
-
-<section class="map-section">
-
-
-<div class="map-placeholder">
-
-
-<i class="fa-solid fa-map-location-dot"></i>
-
-
-<h3>
-
-Business Location
-
-</h3>
-
-
-<p>
-
-Google Maps will be added here
-
-</p>
-
-
-</div>
-
-
-</section>
 
 
 
@@ -603,18 +583,9 @@ Contact
 </h4>
 
 
-<p>
-
-sales@saberfood.it
-
-</p>
-
-
-<p>
-
-+39 XXX XXX XXXX
-
-</p>
+<a class="company-email"></a>
+<a class="company-phone"></a>
+<p class="company-address"></p>
 
 
 </div>
@@ -639,8 +610,13 @@ sales@saberfood.it
 
 
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
+<script src="./js/supabase.js"></script>
+
+<script src="./js/settings-loader.js"></script>
 <script src="js/main.js"></script>
+<script src="js/contact.js"></script>
 
 
 </body>

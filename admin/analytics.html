@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Analytics | Saber Food Admin</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet" href="css/admin.css">
+<link rel="stylesheet" href="css/analytics.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar">
+
+<div class="logo">
+
+<h2><span>Saber</span> Food</h2>
+
+<small>Admin Portal</small>
+
+</div>
+
+<ul>
+
+<li>
+
+<a href="dashboard.html">
+
+<i class="fa-solid fa-chart-line"></i>
+
+Dashboard
+
+</a>
+
+</li>
+
+<li>
+
+<a href="products.html">
+
+<i class="fa-solid fa-box"></i>
+
+Products
+
+</a>
+
+</li>
+
+<li>
+
+<a href="requests.html">
+
+<i class="fa-solid fa-envelope"></i>
+
+Quote Requests
+
+</a>
+
+</li>
+
+<li class="active">
+
+<a href="analytics.html">
+
+<i class="fa-solid fa-chart-pie"></i>
+
+Analytics
+
+</a>
+
+</li>
+
+<li>
+
+<a href="settings.html">
+
+<i class="fa-solid fa-gear"></i>
+
+Settings
+
+</a>
+
+</li>
+
+<li>
+
+<button id="logoutBtn">
+
+<i class="fa-solid fa-right-from-bracket"></i>
+
+Logout
+
+</button>
+
+</li>
+
+</ul>
+
+</aside>
+
+<!-- CONTENT -->
+
+<main class="content">
+
+<header class="topbar">
+
+<div>
+
+<h1>Analytics</h1>
+
+<small>Business Insights</small>
+
+</div>
+
+</header>
+
+<!-- KPI CARDS -->
+
+<section class="analytics-cards">
+
+<div class="card">
+
+<i class="fa-solid fa-file-lines"></i>
+
+<h2 id="totalQuotes">0</h2>
+
+<p>Total Quotes</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-clock"></i>
+
+<h2 id="pendingQuotes">0</h2>
+
+<p>Pending</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-circle-check"></i>
+
+<h2 id="approvalRate">0%</h2>
+
+<p>Approval Rate</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-box"></i>
+
+<h2 id="requestedProducts">0</h2>
+
+<p>Products Requested</p>
+
+</div>
+
+</section>
+
+<!-- CHARTS -->
+
+<section class="charts-grid">
+
+<div class="panel">
+
+<h3>Monthly Quote Requests</h3>
+
+<canvas id="monthlyQuotesChart"></canvas>
+
+</div>
+
+<div class="panel">
+
+<h3>Products by Category</h3>
+
+<canvas id="categoryChart"></canvas>
+
+</div>
+
+<div class="panel pie-panel">
+
+    <div class="panel-header">
+        <h2>Quote Status</h2>
+    </div>
+
+    <div class="pie-container">
+        <canvas id="statusChart"></canvas>
+    </div>
+
+</div>
+
+</section>
+<section class="panel">
+
+    <div class="panel-header">
+
+        <h2>Top Requested Products</h2>
+
+    </div>
+
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th>Product</th>
+
+                <th>Requests</th>
+
+                <th>Total Qty</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody id="topProductsTable">
+
+        </tbody>
+
+    </table>
+
+</section>
+</main>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script src="../js/supabase.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="js/auth.js"></script>
+
+<script src="js/logout.js"></script>
+
+<script src="js/analytics.js"></script>
+
+</body>
+
+</html>
