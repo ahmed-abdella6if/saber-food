@@ -23,6 +23,8 @@
 
     <!-- ================= SIDEBAR ================= -->
 
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
     <aside class="sidebar">
 
         <div class="logo">
@@ -86,13 +88,21 @@
 
         <header class="topbar">
 
-            <div>
+            <div class="topbar-left">
 
-                <h1>Products</h1>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
 
-                <p>
-                    Manage your wholesale product catalog
-                </p>
+                <div>
+
+                    <h1>Products</h1>
+
+                    <p>
+                        Manage your wholesale product catalog
+                    </p>
+
+                </div>
 
             </div>
 
@@ -803,6 +813,7 @@
 
 <script src="js/auth.js"></script>
 <script src="js/products.js"></script>
+<script src="js/sidebar-toggle.js"></script>
 
 </body>
 

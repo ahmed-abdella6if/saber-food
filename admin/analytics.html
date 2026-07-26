@@ -27,6 +27,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 
 <!-- SIDEBAR -->
 
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
 <aside class="sidebar">
 
 <div class="logo">
@@ -121,11 +123,19 @@ Logout
 
 <header class="topbar">
 
+<div class="topbar-left">
+
+<button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+<i class="fa-solid fa-bars"></i>
+</button>
+
 <div>
 
 <h1>Analytics</h1>
 
 <small>Business Insights</small>
+
+</div>
 
 </div>
 
@@ -256,6 +266,7 @@ Logout
 <script src="js/logout.js"></script>
 
 <script src="js/analytics.js"></script>
+<script src="js/sidebar-toggle.js"></script>
 
 </body>
 
