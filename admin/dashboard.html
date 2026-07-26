@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Saber Food Admin Dashboard</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet" href="css/admin.css">
+<link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- SIDEBAR -->
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <span>Saber</span> Food
+
+            <small>Admin Portal</small>
+
+        </div>
+
+        <ul>
+
+            <li class="active">
+                <a href="dashboard.html">
+                    <i class="fa-solid fa-chart-line"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="products.html">
+                    <i class="fa-solid fa-box"></i>
+                    Products
+                </a>
+            </li>
+
+            <li>
+                <a href="requests.html">
+                    <i class="fa-solid fa-envelope"></i>
+                    Quote Requests
+                </a>
+            </li>
+
+            <li>
+                <a href="analytics.html">
+                    <i class="fa-solid fa-chart-pie"></i>
+                    Analytics
+                </a>
+            </li>
+
+            <li>
+                <a href="settings.html">
+                    <i class="fa-solid fa-gear"></i>
+                    Settings
+                </a>
+            </li>
+
+            <li>
+                <button id="logoutBtn">
+
+    <i class="fa-solid fa-right-from-bracket"></i>
+
+    Logout
+
+</button>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- MAIN -->
+
+    <main class="content">
+
+        <!-- TOPBAR -->
+
+        <header class="topbar">
+
+    <div class="topbar-left">
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <h1>Dashboard</h1>
+
+        <small id="currentDate"></small>
+
+    </div>
+
+    <div class="topbar-right">
+
+        <span id="liveClock"></span>
+
+        <input
+        type="search"
+        placeholder="Search...">
+
+        <button class="notification">
+
+            <i class="fa-solid fa-bell"></i>
+
+        </button>
+
+        <div class="admin-user">
+
+            <i class="fa-solid fa-user"></i>
+
+            <span>Admin</span>
+
+        </div>
+
+    </div>
+
+</header>
+
+        <!-- STATS -->
+
+        <section class="stats-grid">
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-box"></i>
+
+<h2 id="totalProducts">0</h2>
+                <p>Total Products</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-layer-group"></i>
+
+<h2 id="totalCategories">0</h2>
+                <p>Categories</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-file-circle-question"></i>
+
+<h2 id="totalQuotes">0</h2>
+                <p>Quote Requests</p>
+
+            </div>
+
+            <div class="stat-card pending">
+
+                <i class="fa-solid fa-clock"></i>
+
+<h2 id="pendingQuotes">0</h2>
+                <p>Pending Requests</p>
+
+            </div>
+
+        </section>
+
+        <!-- TWO COLUMN -->
+
+        <section class="dashboard-grid">
+
+            <!-- REQUESTS -->
+
+            <div class="panel">
+
+                <div class="panel-header">
+
+                    <h2>Recent Quote Requests</h2>
+
+                    <a href="requests.html">View All</a>
+
+                </div>
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Company</th>
+                            <th>Category</th>
+                            <th>Status</th>
+
+                        </tr>
+
+                    </thead>
+
+<tbody id="recentQuotes">
+                        
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <!-- QUICK ACTIONS -->
+
+            <div class="panel">
+
+                <div class="panel-header">
+
+                    <h2>Quick Actions</h2>
+
+                </div>
+
+                <div class="actions">
+
+                    <a href="add-product.html" class="action-btn">
+
+                        <i class="fa-solid fa-plus"></i>
+
+                        Add Product
+
+                    </a>
+
+                    <a href="products.html" class="action-btn">
+
+                        <i class="fa-solid fa-box"></i>
+
+                        Manage Products
+
+                    </a>
+
+                    <a href="analytics.html" class="action-btn">
+
+                        <i class="fa-solid fa-chart-column"></i>
+
+                        View Analytics
+
+                    </a>
+
+                    <a href="requests.html" class="action-btn">
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                        Quote Requests
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ANALYTICS -->
+
+        <section class="panel">
+
+            <div class="panel-header">
+
+                <h2>Products by Category</h2>
+
+            </div>
+
+            <canvas id="categoryChart"></canvas>
+
+        </section>
+        <section class="panel">
+
+    <div class="panel-header">
+
+        <h2>Monthly Quote Requests</h2>
+
+    </div>
+
+    <canvas id="requestsChart"></canvas>
+
+</section>
+
+    </main>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script src="../js/supabase.js"></script>
+
+<script src="js/auth.js"></script>
+<script src="js/logout.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/dashboard.js"></script>
+<script src="js/sidebar-toggle.js"></script>
+
+</body>
+
+</html>

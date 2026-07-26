@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Saber Food Admin</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="css/products.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h2><span>Saber</span> Food</h2>
+            <small>Admin Portal</small>
+        </div>
+
+        <ul>
+
+            <li>
+                <a href="dashboard.html">
+                    <i class="fa-solid fa-chart-line"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="products.html">
+                    <i class="fa-solid fa-box"></i>
+                    Products
+                </a>
+            </li>
+
+            <li>
+                <a href="requests.html">
+                    <i class="fa-solid fa-envelope"></i>
+                    Quote Requests
+                </a>
+            </li>
+
+            <li>
+                <a href="analytics.html">
+                    <i class="fa-solid fa-chart-pie"></i>
+                    Analytics
+                </a>
+            </li>
+
+            <li>
+                <a href="settings.html">
+                    <i class="fa-solid fa-gear"></i>
+                    Settings
+                </a>
+            </li>
+
+            <li>
+                <a href="login.html">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Logout
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="content">
+
+        <!-- ================= TOPBAR ================= -->
+
+        <header class="topbar">
+
+            <div class="topbar-left">
+
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div>
+
+                    <h1>Products</h1>
+
+                    <p>
+                        Manage your wholesale product catalog
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="topbar-actions">
+
+                <input
+    type="text"
+    id="searchInput"
+    placeholder="Search products...">
+
+                <button
+                    class="btn btn-primary"
+                    id="openDrawer">
+
+                    <i class="fa-solid fa-plus"></i>
+
+                    Add Product
+
+                </button>
+
+            </div>
+            <div class="product-filters">
+
+    <button class="filter-btn active" data-filter="all">
+        All
+    </button>
+
+    <button class="filter-btn" data-filter="Rice">
+        Rice
+    </button>
+
+    <button class="filter-btn" data-filter="Meat">
+        Meat
+    </button>
+
+    <button class="filter-btn" data-filter="Spices">
+        Spices
+    </button>
+
+    <button class="filter-btn" data-filter="Oil">
+        Oil
+    </button>
+
+</div>
+
+        </header>
+
+        <!-- ================= STATISTICS ================= -->
+
+       <section class="stats-grid">
+
+    <div class="stat-card">
+
+        <i class="fa-solid fa-box"></i>
+
+        <div>
+
+            <h2 id="totalProducts">0</h2>
+
+            <p>Total Products</p>
+
+        </div>
+
+    </div>
+
+    <div class="stat-card">
+
+        <i class="fa-solid fa-circle-check"></i>
+
+        <div>
+
+            <h2 id="activeProducts">0</h2>
+
+            <p>Active</p>
+
+        </div>
+
+    </div>
+
+    <div class="stat-card">
+
+        <i class="fa-solid fa-eye-slash"></i>
+
+        <div>
+
+            <h2 id="hiddenProducts">0</h2>
+
+            <p>Hidden</p>
+
+        </div>
+
+    </div>
+
+    <div class="stat-card">
+
+        <i class="fa-solid fa-layer-group"></i>
+
+        <div>
+
+            <h2 id="totalCategories">0</h2>
+
+            <p>Categories</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+        
+        <!-- ================= PRODUCTS TABLE ================= -->
+
+<section class="panel">
+
+    <div class="panel-header">
+
+        <h2>Products</h2>
+
+        <div class="panel-actions">
+
+            <span class="product-count">
+
+                145 Products
+
+            </span>
+
+        </div>
+
+    </div>
+
+    <div class="table-responsive">
+
+        <table class="products-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Brand</th>
+                    <th>Price</th>
+                    <th>Stock</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="productsTableBody">
+
+</tbody>
+
+        </table>
+
+    </div>
+
+    <div class="pagination">
+
+        <button>
+
+            <i class="fa-solid fa-angle-left"></i>
+
+        </button>
+
+        <button class="active">
+
+            1
+
+        </button>
+
+        <button>
+
+            2
+
+        </button>
+
+        <button>
+
+            3
+
+        </button>
+
+        <button>
+
+            <i class="fa-solid fa-angle-right"></i>
+
+        </button>
+
+    </div>
+
+</section>
+<!-- =====================================================
+     ADD / EDIT PRODUCT DRAWER
+===================================================== -->
+
+<div class="drawer-overlay" id="drawerOverlay"></div>
+
+<aside class="product-drawer" id="productDrawer">
+
+    <div class="drawer-header">
+
+        <div>
+
+            <h2 id="drawerTitle">
+
+                Add Product
+
+            </h2>
+
+            <p>
+
+                Fill in the product information below.
+
+            </p>
+
+        </div>
+
+        <button id="closeDrawer">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+    </div>
+
+    <form id="productForm">
+
+        <!-- ================= IMAGES ================= -->
+
+        <section class="drawer-section">
+
+            <h3>
+
+                Product Images
+
+            </h3>
+
+            <div class="upload-area">
+
+                <input
+    type="file"
+    id="productImage"
+    accept="image/*">
+
+                <label for="productImages">
+
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+
+                    <h4>
+
+                        Upload Images
+
+                    </h4>
+
+                    <p>
+
+                        JPG, PNG or WEBP
+
+                    </p>
+
+                </label>
+
+            </div>
+
+            <div
+                class="image-preview"
+                id="imagePreview">
+
+                <div class="preview-placeholder">
+
+                    <i class="fa-regular fa-image"></i>
+
+                    <p>
+
+                        Image Preview
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ================= BASIC INFORMATION ================= -->
+
+        <section class="drawer-section">
+
+            <h3>
+
+                Basic Information
+
+            </h3>
+
+            <div class="form-grid">
+
+                <div class="form-group">
+
+                    <label>
+
+                        Product Name
+
+                    </label>
+
+                    <input
+                        type="text"
+                        id="productName"
+                        placeholder="Basmati Rice">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+
+                        Brand
+
+                    </label>
+
+                    <input
+                        type="text"
+                        id="productBrand"
+                        placeholder="India Gate">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+
+                        Category
+
+                    </label>
+
+                    <select id="productCategory">
+
+                        <option>Rice</option>
+
+                        <option>Frozen Food</option>
+
+                        <option>Spices</option>
+
+                        <option>Olive Oil</option>
+
+                        <option>Dairy</option>
+
+                        <option>Beverages</option>
+
+                        <option>Dates</option>
+
+                        <option>Sauces</option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+
+                        Country of Origin
+
+                    </label>
+
+                    <input
+                        type="text"
+                        id="productOrigin"
+                        placeholder="Italy">
+
+                </div>
+
+
+            </div>
+
+        </section>
+                <!-- ================= PRICING ================= -->
+
+        <section class="drawer-section">
+
+            <h3>
+
+                Pricing & Inventory
+
+            </h3>
+
+            <div class="form-grid">
+
+                <div class="form-group">
+
+                    <label>
+
+                        Wholesale Price (€)
+
+                    </label>
+
+                    <input
+                        type="number"
+                        id="productPrice"
+                        placeholder="22.00">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+
+                        Discount Price (€)
+
+                    </label>
+
+                    <input
+                        type="number"
+                        id="productDiscount"
+                        placeholder="18.00">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+
+                        Stock Quantity
+
+                    </label>
+
+                    <input
+                        type="number"
+                        id="productStock"
+                        placeholder="350">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+
+                        Minimum Order
+
+                    </label>
+
+                    <input
+                        type="number"
+                        id="minimumOrder"
+                        placeholder="5">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+
+                        SKU
+
+                    </label>
+
+                    <input
+                        type="text"
+                        id="productSKU"
+                        placeholder="RICE-001">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+
+                        Unit
+
+                    </label>
+
+                    <select id="productUnit">
+
+                        <option>Piece</option>
+                        <option>Bag</option>
+                        <option>Carton</option>
+                        <option>Box</option>
+                        <option>Kg</option>
+                        <option>Liter</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ================= DESCRIPTION ================= -->
+
+        <section class="drawer-section">
+
+            <h3>
+
+                Description
+
+            </h3>
+
+            <textarea
+                id="productDescription"
+                rows="6"
+                placeholder="Write a complete description of the product..."></textarea>
+
+        </section>
+
+   <select id="productAvailability">
+
+    <option>Available</option>
+
+    <option>Out of Stock</option>
+
+    <option>Coming Soon</option>
+
+</select>
+<div class="form-group">
+
+    <label>
+
+        <input
+            type="checkbox"
+            id="productFeatured">
+
+        Featured Product
+
+    </label>
+
+</div>
+        <!-- ================= FORM ACTIONS ================= -->
+
+        <div class="drawer-footer">
+
+            <button
+                type="button"
+                class="btn btn-secondary"
+                id="cancelDrawer">
+
+                Cancel
+
+            </button>
+
+            <button
+                type="submit"
+                class="btn btn-primary"
+                id="saveProduct">
+
+                <i class="fa-solid fa-floppy-disk"></i>
+
+                Save Product
+
+            </button>
+
+        </div>
+
+    </form>
+
+</aside>
+<!-- =====================================================
+     DELETE CONFIRMATION MODAL
+===================================================== -->
+
+<div class="modal-overlay" id="deleteModal">
+
+    <div class="delete-modal">
+
+        <div class="delete-icon">
+
+            <i class="fa-solid fa-trash"></i>
+
+        </div>
+
+        <h2>
+
+            Delete Product?
+
+        </h2>
+
+        <p>
+
+            This action cannot be undone.
+
+        </p>
+
+        <strong id="deleteProductName">
+
+            Basmati Rice
+
+        </strong>
+
+        <div class="modal-buttons">
+
+            <button
+                class="btn btn-secondary"
+                id="cancelDelete">
+
+                Cancel
+
+            </button>
+
+            <button
+                class="btn btn-danger"
+                id="confirmDelete">
+
+                <i class="fa-solid fa-trash"></i>
+
+                Delete Product
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- =====================================================
+     SUCCESS TOAST
+===================================================== -->
+
+<div
+    class="toast success"
+    id="successToast">
+
+    <i class="fa-solid fa-circle-check"></i>
+
+    <div>
+
+        <strong>
+
+            Success
+
+        </strong>
+
+        <p>
+
+            Product saved successfully.
+
+        </p>
+
+    </div>
+
+</div>
+
+<!-- =====================================================
+     ERROR TOAST
+===================================================== -->
+
+<div
+    class="toast error"
+    id="errorToast">
+
+    <i class="fa-solid fa-circle-xmark"></i>
+
+    <div>
+
+        <strong>
+
+            Error
+
+        </strong>
+
+        <p>
+
+            Something went wrong.
+
+        </p>
+
+    </div>
+
+</div>
+
+<!-- =====================================================
+     LOADING OVERLAY
+===================================================== -->
+
+<div
+    class="loading-screen"
+    id="loadingScreen">
+
+    <div class="loader"></div>
+
+    <h3>
+
+        Saving Product...
+
+    </h3>
+
+    <p>
+
+        Please wait while we update the database.
+
+    </p>
+
+</div>
+    </main>
+
+</div>
+
+<!-- ================= CHART.JS ================= -->
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<!-- ================= PRODUCTS JAVASCRIPT ================= -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script src="../js/supabase.js"></script>
+
+<script src="js/auth.js"></script>
+<script src="js/products.js"></script>
+<script src="js/sidebar-toggle.js"></script>
+
+</body>
+
+</html>

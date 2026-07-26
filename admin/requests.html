@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Quote Requests | Saber Food Admin</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet" href="css/admin.css">
+<link rel="stylesheet" href="css/requests.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+<!-- ======================================================
+SIDEBAR
+====================================================== -->
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<aside class="sidebar">
+
+<div class="logo">
+
+<h2><span>Saber</span> Food</h2>
+
+<small>Admin Portal</small>
+
+</div>
+
+<ul>
+
+<li>
+
+<a href="dashboard.html">
+
+<i class="fa-solid fa-chart-line"></i>
+
+Dashboard
+
+</a>
+
+</li>
+
+<li>
+
+<a href="products.html">
+
+<i class="fa-solid fa-box"></i>
+
+Products
+
+</a>
+
+</li>
+
+<li class="active">
+
+<a href="requests.html">
+
+<i class="fa-solid fa-envelope"></i>
+
+Quote Requests
+
+</a>
+
+</li>
+
+<li>
+
+<a href="analytics.html">
+
+<i class="fa-solid fa-chart-pie"></i>
+
+Analytics
+
+</a>
+
+</li>
+
+<li>
+
+<a href="settings.html">
+
+<i class="fa-solid fa-gear"></i>
+
+Settings
+
+</a>
+
+</li>
+
+<li>
+
+<a href="login.html">
+
+<i class="fa-solid fa-right-from-bracket"></i>
+
+Logout
+
+</a>
+
+</li>
+
+</ul>
+
+</aside>
+
+<!-- ======================================================
+MAIN CONTENT
+====================================================== -->
+
+<main class="content">
+
+<header class="topbar">
+
+<div class="topbar-left">
+
+<button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+<i class="fa-solid fa-bars"></i>
+</button>
+
+<h1>
+
+Quote Requeddddddsts
+
+</h1>
+
+<small>
+
+Manage incoming wholesale quotation requests
+
+</small>
+
+</div>
+
+<div class="topbar-right">
+
+<input
+type="search"
+id="searchRequest"
+placeholder="Search company, email or phone...">
+
+</div>
+
+</header>
+
+<!-- ======================================================
+STATISTICS
+====================================================== -->
+
+<section class="request-stats">
+
+<div class="mini-card">
+
+<div>
+
+<h2 id="totalRequests">0</h2>
+
+<p>Total Requests</p>
+
+</div>
+
+<i class="fa-solid fa-envelope"></i>
+
+</div>
+
+<div class="mini-card">
+
+<div>
+
+<h2 id="pendingRequests">0</h2>
+<p>Pending</p>
+
+</div>
+
+<i class="fa-solid fa-clock"></i>
+
+</div>
+
+<div class="mini-card">
+
+<div>
+
+<h2 id="approvedRequests">0</h2>
+<p>Approved</p>
+
+</div>
+
+<i class="fa-solid fa-circle-check"></i>
+
+</div>
+
+<div class="mini-card">
+
+<div>
+
+<h2 id="rejectedRequests">0</h2>
+<p>Rejected</p>
+
+</div>
+
+<i class="fa-solid fa-circle-xmark"></i>
+
+</div>
+
+</section>
+
+<!-- ======================================================
+FILTERS
+====================================================== -->
+
+<section class="panel">
+
+<div class="filters">
+
+<select id="statusFilter">
+
+<option>All Status</option>
+
+<option>Pending</option>
+
+<option>Approved</option>
+
+<option>Rejected</option>
+
+</select>
+
+
+
+
+
+<select id="countryFilter">
+
+<option>All Countries</option>
+
+<option>Italy</option>
+
+<option>France</option>
+
+<option>Germany</option>
+
+<option>Spain</option>
+
+</select>
+
+</div>
+
+</section>
+
+<!-- ======================================================
+REQUEST TABLE
+====================================================== -->
+
+<section class="panel">
+
+<div class="panel-header">
+
+<h2>
+
+Latest Quote Requests
+
+</h2>
+
+<span id="requestCount">
+
+0 Requests
+
+</span>
+
+</div>
+
+<div class="table-responsive">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+
+<th>Company</th>
+
+<th>Contact</th>
+
+<th>Country</th>
+
+<th>Products</th>
+
+<th>Status</th>
+
+<th>Date</th>
+
+<th>Actions</th>
+
+</tr>
+
+</thead>
+
+<tbody id="requestsTable">
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+<!-- ======================================================
+REQUEST DETAILS DRAWER
+====================================================== -->
+
+<div class="drawer-overlay" id="drawerOverlay"></div>
+
+<aside class="request-drawer" id="requestDrawer">
+
+<div class="drawer-header">
+
+<h2>
+
+Request Details
+
+</h2>
+
+<button id="closeDrawer">
+
+<i class="fa-solid fa-xmark"></i>
+
+</button>
+
+</div>
+
+<div class="drawer-body">
+
+<div class="request-info">
+
+<h3 id="drawerCompany"></h3>
+
+<span
+id="drawerStatus"
+class="status">
+</span>
+
+</div>
+
+<div class="info-grid">
+
+<div>
+
+<label>Contact Person</label>
+
+<p id="drawerContact"></p>
+</div>
+
+<div>
+
+<label>Email</label>
+
+<p id="drawerEmail"></p>
+</div>
+
+<div>
+
+<label>Phone</label>
+
+<p id="drawerPhone"></p>
+</div>
+
+<div>
+
+<label>Company</label>
+
+<p id="drawerCompany2"></p>
+</div>
+
+
+
+<div>
+
+<label>Country</label>
+
+<p id="drawerCountry"></p>
+</div>
+
+<div>
+
+
+
+<div>
+
+<label>Date</label>
+
+<p id="drawerDate"></p>
+
+</div>
+
+</div>
+<div>
+
+<label>Products</label>
+
+<div id="drawerProducts"></div>
+
+</div>
+<div class="message-box">
+
+<h3>
+
+Customer Message
+
+</h3>
+
+<p id="drawerNotes"></p>
+
+</div>
+
+<div class="drawer-actions">
+
+<button
+    id="drawerEmailBtn"
+    class="btn btn-primary">
+
+    <i class="fa-solid fa-envelope"></i>
+
+    Email Customer
+
+</button>
+
+<button
+    id="drawerWhatsapp"
+    class="btn btn-secondary">
+
+    <i class="fa-brands fa-whatsapp"></i>
+
+    WhatsApp
+
+</button>
+
+<button
+    id="drawerApprove"
+    class="btn btn-success">
+
+    <i class="fa-solid fa-check"></i>
+
+    Approve
+
+</button>
+<button
+    id="drawerReject"
+    class="btn btn-danger">
+
+    <i class="fa-solid fa-xmark"></i>
+
+    Reject
+
+</button>
+
+</div>
+
+</div>
+
+</aside>
+<!-- ======================================================
+APPROVE / REJECT MODAL
+====================================================== -->
+
+<div class="modal-overlay" id="statusModal">
+
+<div class="status-modal">
+
+<div class="status-icon">
+
+<i class="fa-solid fa-circle-question"></i>
+
+</div>
+
+<h2>
+
+Update Request Status
+
+</h2>
+
+<p>
+
+Choose the new status for this quotation request.
+
+</p>
+
+<div class="status-buttons">
+
+<button class="btn btn-success" id="approveRequest">
+
+<i class="fa-solid fa-check"></i>
+
+Approve
+
+</button>
+
+<button class="btn btn-danger" id="rejectRequest">
+
+<i class="fa-solid fa-xmark"></i>
+
+Reject
+
+</button>
+
+<button class="btn btn-secondary" id="cancelStatus">
+
+Cancel
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ======================================================
+DELETE MODAL
+====================================================== -->
+
+<div class="modal-overlay" id="deleteModal">
+
+<div class="delete-modal">
+
+<div class="delete-icon">
+
+<i class="fa-solid fa-trash"></i>
+
+</div>
+
+<h2>
+
+Delete Request?
+
+</h2>
+
+<p>
+
+This quotation request will be permanently removed.
+
+</p>
+
+
+<div class="modal-buttons">
+
+<button
+class="btn btn-secondary"
+id="cancelDelete">
+
+Cancel
+
+</button>
+
+<button
+class="btn btn-danger"
+id="confirmDelete">
+
+Delete
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ======================================================
+SUCCESS TOAST
+====================================================== -->
+
+<div class="toast success" id="successToast">
+
+<i class="fa-solid fa-circle-check"></i>
+
+<span>
+
+Request updated successfully.
+
+</span>
+
+</div>
+
+<!-- ======================================================
+ERROR TOAST
+====================================================== -->
+
+<div class="toast error" id="errorToast">
+
+<i class="fa-solid fa-circle-xmark"></i>
+
+<span>
+
+Something went wrong.
+
+</span>
+
+</div>
+
+<!-- ======================================================
+LOADING SCREEN
+====================================================== -->
+
+<div class="loading-screen" id="loadingScreen">
+
+<div class="loader"></div>
+
+<p>
+
+Updating Request...
+
+</p>
+
+</div>
+
+</main>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script src="../js/supabase.js"></script>
+
+<script src="js/auth.js"></script>
+<script src="js/requests.js"></script>
+<script src="js/sidebar-toggle.js"></script>
+
+</body>
+
+</html>

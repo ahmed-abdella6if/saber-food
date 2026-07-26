@@ -1322,3 +1322,26 @@
 
 
 }
+
+.contact .hero-buttons {
+
+    justify-content: center;
+
+}
+#featuredGrid {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 25px;
+
+}
+
+#featuredGrid .product-card {
+
+    flex: 0 1 260px;
+
+}   
