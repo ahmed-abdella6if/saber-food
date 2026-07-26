@@ -12,6 +12,19 @@
 
 html{
     scroll-behavior:smooth;
+    overflow-x:hidden;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#f4f6f8;
+
+    color:#222;
+
+    overflow-x:hidden;
+
 }
 
 body{
@@ -295,6 +308,8 @@ body{
 
     height:48px;
 
+    flex-shrink:0;
+
     border:none;
 
     background:white;
@@ -302,8 +317,6 @@ body{
     border-radius:50%;
 
     cursor:pointer;
-
-    box-shadow:var(--shadow);
 
 }
 
