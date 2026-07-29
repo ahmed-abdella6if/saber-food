@@ -446,7 +446,6 @@ async function uploadImage(file) {
     const { data } = db.storage
         .from("products")
         .getPublicUrl(fileName);
-console.log(data);
 
     return data.publicUrl;
 
@@ -456,7 +455,6 @@ console.log(data);
 ========================================== */
 
 async function saveProduct() {
-    console.log("SAVE BUTTON CLICKED");
 
     const imageFile =
     document.getElementById("productImage").files[0];
@@ -497,7 +495,6 @@ if (imageFile) {
         image: imageUrl
 
     };
-    console.log(product);
 
 let data;
 let error;
@@ -519,9 +516,7 @@ if (editingProductId) {
 
 }
 
-console.log("Inserted:", data);
 
-console.log("Insert Error:", error);
 
     if (error) {
 

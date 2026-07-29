@@ -27,6 +27,7 @@
 <!-- ======================================================
 SIDEBAR
 ====================================================== -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
 <aside class="sidebar">
 <div class="logo">
 <h2><span>Saber</span> Food</h2>
@@ -89,6 +90,9 @@ MAIN CONTENT
 <main class="content">
 <header class="topbar">
 <div class="topbar-left">
+<button aria-label="Toggle menu" class="menu-toggle" data-i18n-aria-label="Toggle menu" id="menuToggle">
+<i class="fa-solid fa-bars"></i>
+</button>
 <h1 data-i18n="Quote Requeddddddsts">
 
 Quote Requeddddddsts
@@ -390,6 +394,7 @@ Updating Request...
 <script src="../js/supabase.js"></script>
 <script src="js/auth.js"></script>
 <script src="js/requests.js"></script>
+<script src="js/sidebar-toggle.js"></script>
 <script src="../js/i18n-data.js"></script>
 <script src="../js/i18n.js"></script>
 </body>

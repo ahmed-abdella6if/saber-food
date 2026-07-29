@@ -25,6 +25,7 @@
 
 <div class="dashboard">
 <!-- SIDEBAR -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
 <aside class="sidebar">
 <div class="logo">
 <h2><span>Saber</span> Food</h2>
@@ -84,9 +85,14 @@
 <!-- CONTENT -->
 <main class="content">
 <header class="topbar">
+<div class="topbar-left">
+<button aria-label="Toggle menu" class="menu-toggle" data-i18n-aria-label="Toggle menu" id="menuToggle">
+<i class="fa-solid fa-bars"></i>
+</button>
 <div>
 <h1 data-i18n="Analytics">Analytics</h1>
 <small data-i18n="Business Insights">Business Insights</small>
+</div>
 </div>
 </header>
 <!-- KPI CARDS -->
@@ -155,6 +161,7 @@
 <script src="js/auth.js"></script>
 <script src="js/logout.js"></script>
 <script src="js/analytics.js"></script>
+<script src="js/sidebar-toggle.js"></script>
 <script src="../js/i18n-data.js"></script>
 <script src="../js/i18n.js"></script>
 </body>

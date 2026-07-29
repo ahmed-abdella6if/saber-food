@@ -18,8 +18,6 @@ async function loadQuotes(){
         .from("quotes")
         .select("*")
         .order("created_at",{ascending:false});
-        console.log(data);
-console.log(error);
 
     if(error){
 

@@ -3,7 +3,7 @@
 window.SABER_I18N = {
   "Saber Food | Arabic & Halal Food Wholesale in Italy": {
     "it": "Saber Food | Ingrosso di Alimenti Arabi e Halal in Italia",
-    "ar": "صابر فود | تجارة جملة للأطعمة العربية والحلال في إيطاليا"
+    "ar": "سابر فود | تجارة جملة للأطعمة العربية والحلال في إيطاليا"
   },
   "Company Logo": {
     "it": "Logo Aziendale",
@@ -91,7 +91,7 @@ window.SABER_I18N = {
   },
   "Why Businesses Choose Saber Food": {
     "it": "Perché le Aziende Scelgono Saber Food",
-    "ar": "لماذا تختار الشركات صابر فود"
+    "ar": "لماذا تختار الشركات سابر فود"
   },
   "Your trusted wholesale partner for authentic Arabic & Halal food products across Italy.": {
     "it": "Il tuo partner all'ingrosso di fiducia per autentici prodotti alimentari arabi e halal in tutta Italia.",
@@ -151,11 +151,11 @@ window.SABER_I18N = {
   },
   "About Saber Food": {
     "it": "Chi è Saber Food",
-    "ar": "عن صابر فود"
+    "ar": "عن سابر فود"
   },
   "Saber Food is a trusted wholesale supplier specializing in Arabic and Halal food products across Italy. We proudly serve restaurants, supermarkets, grocery stores, catering companies and food distributors with premium products and dependable service.": {
     "it": "Saber Food è un fornitore all'ingrosso affidabile specializzato in prodotti alimentari arabi e halal in tutta Italia. Serviamo con orgoglio ristoranti, supermercati, negozi alimentari, aziende di catering e distributori con prodotti premium e un servizio affidabile.",
-    "ar": "ص    ابر فود هي مورد جملة موثوق متخصص في المنتجات الغذائية العربية والحلال في جميع أنحاء إيطاليا. نفخر بخدمة المطاعم والسوبر ماركت ومحلات البقالة وشركات التموين وموزعي الأغذية بمنتجات فاخرة وخدمة موثوقة."
+    "ar": "سابر فود هي مورد جملة موثوق متخصص في المنتجات الغذائية العربية والحلال في جميع أنحاء إيطاليا. نفخر بخدمة المطاعم والسوبر ماركت ومحلات البقالة وشركات التموين وموزعي الأغذية بمنتجات فاخرة وخدمة موثوقة."
   },
   "✔ Premium Imported Products": {
     "it": "✔ Prodotti Importati Premium",
@@ -195,7 +195,7 @@ window.SABER_I18N = {
   },
   "Getting started with Saber Food is simple.": {
     "it": "Iniziare con Saber Food è semplice.",
-    "ar": "البدء مع صابر فود أمر بسيط."
+    "ar": "البدء مع سابر فود أمر بسيط."
   },
   "Explore our complete wholesale catalog.": {
     "it": "Esplora il nostro catalogo all'ingrosso completo.",
@@ -251,15 +251,15 @@ window.SABER_I18N = {
   },
   "© 2026 Saber Food. All Rights Reserved.": {
     "it": "© 2026 Saber Food. Tutti i diritti riservati.",
-    "ar": "© 2026 صابر فود. جميع الحقوق محفوظة."
+    "ar": "© 2026 سابر فود. جميع الحقوق محفوظة."
   },
   "About Us | Saber Food": {
     "it": "Chi Siamo | Saber Food",
-    "ar": "من نحن | صابر فود"
+    "ar": "من نحن | سابر فود"
   },
   "ABOUT SABER FOOD": {
     "it": "CHI È SABER FOOD",
-    "ar": "عن صابر فود"
+    "ar": "عن سابر فود"
   },
   "A Trusted Wholesale Partner for Arabic & Halal Food in Italy": {
     "it": "Un Partner all'Ingrosso di Fiducia per Alimenti Arabi e Halal in Italia",
@@ -271,7 +271,7 @@ window.SABER_I18N = {
   },
   "Saber Food Warehouse": {
     "it": "Magazzino Saber Food",
-    "ar": "مستودع صابر فود"
+    "ar": "مستودع سابر فود"
   },
   "WHO WE ARE": {
     "it": "CHI SIAMO",
@@ -283,7 +283,7 @@ window.SABER_I18N = {
   },
   "Saber Food is a wholesale supplier specializing in premium Arabic and Halal food products for businesses throughout Italy. We work with restaurants, supermarkets, grocery stores, catering companies and food distributors who value quality, consistency and reliable supply.": {
     "it": "Saber Food è un fornitore all'ingrosso specializzato in prodotti alimentari arabi e halal premium per aziende in tutta Italia. Collaboriamo con ristoranti, supermercati, negozi alimentari, aziende di catering e distributori che apprezzano qualità, costanza e forniture affidabili.",
-    "ar": "صابر فود هي مورد جملة متخصص في المنتجات الغذائية العربية والحلال الفاخرة للشركات في جميع أنحاء إيطاليا. نعمل مع المطاعم والسوبر ماركت ومحلات البقالة وشركات التموين وموزعي الأغذية الذين يقدّرون الجودة والاتساق والإمداد الموثوق."
+    "ar": "سابر فود هي مورد جملة متخصص في المنتجات الغذائية العربية والحلال الفاخرة للشركات في جميع أنحاء إيطاليا. نعمل مع المطاعم والسوبر ماركت ومحلات البقالة وشركات التموين وموزعي الأغذية الذين يقدّرون الجودة والاتساق والإمداد الموثوق."
   },
   "By working with trusted manufacturers and suppliers, we provide carefully selected products that meet the expectations of professional kitchens and retail businesses while building long-term relationships based on trust and reliability.": {
     "it": "Collaborando con produttori e fornitori affidabili, offriamo prodotti accuratamente selezionati che soddisfano le aspettative di cucine professionali e attività al dettaglio, costruendo al contempo relazioni durature basate su fiducia e affidabilità.",
@@ -419,7 +419,7 @@ window.SABER_I18N = {
   },
   "Saber Food": {
     "it": "Saber Food",
-    "ar": "صابر فود"
+    "ar": "سابر فود"
   },
   "Premium Arabic & Halal Food Wholesale Supplier in Italy.": {
     "it": "Fornitore all'ingrosso premium di alimenti arabi e halal in Italia.",
@@ -431,7 +431,7 @@ window.SABER_I18N = {
   },
   "Products | Saber Food": {
     "it": "Prodotti | Saber Food",
-    "ar": "المنتجات | صابر فود"
+    "ar": "المنتجات | سابر فود"
   },
   "WHOLESALE PRODUCTS": {
     "it": "PRODOTTI ALL'INGROSSO",
@@ -567,7 +567,7 @@ window.SABER_I18N = {
   },
   "Brands | Saber Food": {
     "it": "Marchi | Saber Food",
-    "ar": "العلامات التجارية | صابر فود"
+    "ar": "العلامات التجارية | سابر فود"
   },
   "OUR BRANDS": {
     "it": "I NOSTRI MARCHI",
@@ -587,7 +587,7 @@ window.SABER_I18N = {
   },
   "Explore some of the brands and product lines available through Saber Food.": {
     "it": "Scopri alcuni dei marchi e delle linee di prodotti disponibili tramite Saber Food.",
-    "ar": "اكتشف بعض العلامات التجارية وخطوط المنتجات المتاحة من خلال س ابر فود."
+    "ar": "اكتشف بعض العلامات التجارية وخطوط المنتجات المتاحة من خلال سابر فود."
   },
   "Brand Logo": {
     "it": "Logo del Marchio",
@@ -619,7 +619,7 @@ window.SABER_I18N = {
   },
   "Why Partner With Saber Food?": {
     "it": "Perché Collaborare con Saber Food?",
-    "ar": "لماذا الشراكة مع صابر فود؟"
+    "ar": "لماذا الشراكة مع سابر فود؟"
   },
   "We help businesses access quality Arabic and Halal food products through reliable wholesale partnerships.": {
     "it": "Aiutiamo le aziende ad accedere a prodotti alimentari arabi e halal di qualità attraverso partnership all'ingrosso affidabili.",
@@ -659,7 +659,7 @@ window.SABER_I18N = {
   },
   "FAQ | Saber Food": {
     "it": "FAQ | Saber Food",
-    "ar": "الأسئلة الشائعة | صابر فود"
+    "ar": "الأسئلة الشائعة | سابر فود"
   },
   "Frequently Asked Questions": {
     "it": "Domande Frequenti",
@@ -667,7 +667,7 @@ window.SABER_I18N = {
   },
   "Everything businesses need to know about working with Saber Food.": {
     "it": "Tutto ciò che le aziende devono sapere su come lavorare con Saber Food.",
-    "ar": "كل ما تحتاج الشركات معرفته حول التعامل مع صابر فود."
+    "ar": "كل ما تحتاج الشركات معرفته حول التعامل مع سابر فود."
   },
   "Business Questions": {
     "it": "Domande Aziendali",
@@ -679,11 +679,11 @@ window.SABER_I18N = {
   },
   "Who does Saber Food supply?": {
     "it": "Chi rifornisce Saber Food?",
-    "ar": "من الذي تزوده صابر فود؟"
+    "ar": "من الذي تزوده سابر فود؟"
   },
   "Saber Food supplies businesses including restaurants, supermarkets, grocery stores, hotels, catering companies and food distributors.": {
     "it": "Saber Food rifornisce aziende tra cui ristoranti, supermercati, negozi alimentari, hotel, aziende di catering e distributori alimentari.",
-    "ar": "تزوّد صابر فود شركات مثل المطاعم والسوبر ماركت ومحلات البقالة والفنادق وشركات التموين وموزعي الأغذية."
+    "ar": "تزوّد سابر فود شركات مثل المطاعم والسوبر ماركت ومحلات البقالة والفنادق وشركات التموين وموزعي الأغذية."
   },
   "Do you sell to individual customers?": {
     "it": "Vendete a clienti privati?",
@@ -691,7 +691,7 @@ window.SABER_I18N = {
   },
   "No. Saber Food focuses on wholesale partnerships with businesses and professional customers.": {
     "it": "No. Saber Food si concentra su partnership all'ingrosso con aziende e clienti professionali.",
-    "ar": "لا. تركز صابر فود على الشراكات بالجملة مع الشركات والعملاء المحترفين."
+    "ar": "لا. تركز سابر فود على الشراكات بالجملة مع الشركات والعملاء المحترفين."
   },
   "What type of products do you provide?": {
     "it": "Che tipo di prodotti fornite?",
@@ -719,11 +719,11 @@ window.SABER_I18N = {
   },
   "Where is Saber Food located?": {
     "it": "Dove si trova Saber Food?",
-    "ar": "أين تقع صابر فود؟"
+    "ar": "أين تقع سابر فود؟"
   },
   "Saber Food operates in Italy and works with businesses looking for reliable Arabic and Halal food suppliers.": {
     "it": "Saber Food opera in Italia e collabora con aziende alla ricerca di fornitori affidabili di alimenti arabi e halal.",
-    "ar": "تعمل صابر فود في إيطاليا وتتعاون مع الشركات التي تبحث عن موردين موثوقين للأطعمة العربية والحلال."
+    "ar": "تعمل سابر فود في إيطاليا وتتعاون مع الشركات التي تبحث عن موردين موثوقين للأطعمة العربية والحلال."
   },
   "Still Have Questions?": {
     "it": "Hai Ancora Domande?",
@@ -735,7 +735,7 @@ window.SABER_I18N = {
   },
   "Contact | Saber Food": {
     "it": "Contatti | Saber Food",
-    "ar": "اتصل بنا | صابر فود"
+    "ar": "اتصل بنا | سابر فود"
   },
   "CONTACT US": {
     "it": "CONTATTACI",
@@ -747,7 +747,7 @@ window.SABER_I18N = {
   },
   "Contact Saber Food for wholesale Arabic and Halal food supply solutions in Italy.": {
     "it": "Contatta Saber Food per soluzioni di fornitura all'ingrosso di alimenti arabi e halal in Italia.",
-    "ar": "تواصل مع صابر فود للحصول على حلول توريد بالجملة للأطعمة العربية والحلال في إيطاليا."
+    "ar": "تواصل مع سابر فود للحصول على حلول توريد بالجملة للأطعمة العربية والحلال في إيطاليا."
   },
   "For wholesale inquiries, product availability and business partnerships, contact our sales team.": {
     "it": "Per richieste all'ingrosso, disponibilità dei prodotti e partnership aziendali, contatta il nostro team di vendita.",
@@ -803,7 +803,7 @@ window.SABER_I18N = {
   },
   "Admin Login | Saber Food": {
     "it": "Accesso Admin | Saber Food",
-    "ar": "تسجيل دخول المسؤول | صابر فود"
+    "ar": "تسجيل دخول المسؤول | سابر فود"
   },
   "Admin Portal": {
     "it": "Portale Admin",
@@ -827,11 +827,11 @@ window.SABER_I18N = {
   },
   "© 2026 Saber Food Admin": {
     "it": "© 2026 Saber Food Admin",
-    "ar": "© 2026 لوحة إدارة صابر فود"
+    "ar": "© 2026 لوحة إدارة سابر فود"
   },
   "Saber Food Admin Dashboard": {
     "it": "Dashboard Admin Saber Food",
-    "ar": "لوحة تحكم إدارة صابر فود"
+    "ar": "لوحة تحكم إدارة سابر فود"
   },
   "Dashboard": {
     "it": "Dashboard",
@@ -915,7 +915,7 @@ window.SABER_I18N = {
   },
   "Products | Saber Food Admin": {
     "it": "Prodotti | Admin Saber Food",
-    "ar": "المنتجات | إدارة صابر فود"
+    "ar": "المنتجات | إدارة سابر فود"
   },
   "Manage your wholesale product catalog": {
     "it": "Gestisci il tuo catalogo prodotti all'ingrosso",
@@ -1131,7 +1131,7 @@ window.SABER_I18N = {
   },
   "Quote Requests | Saber Food Admin": {
     "it": "Richieste di Preventivo | Admin Saber Food",
-    "ar": "طلبات عروض الأسعار | إدارة صابر فود"
+    "ar": "طلبات عروض الأسعار | إدارة سابر فود"
   },
   "Quote Requeddddddsts": {
     "it": "Richieste di Preventivo",
@@ -1247,7 +1247,7 @@ window.SABER_I18N = {
   },
   "Analytics | Saber Food Admin": {
     "it": "Statistiche | Admin Saber Food",
-    "ar": "التحليلات | إدارة صابر فود"
+    "ar": "التحليلات | إدارة سابر فود"
   },
   "Business Insights": {
     "it": "Approfondimenti Aziendali",
@@ -1283,7 +1283,7 @@ window.SABER_I18N = {
   },
   "Settings | Saber Food Admin": {
     "it": "Impostazioni | Admin Saber Food",
-    "ar": "الإعدادات | إدارة صابر فود"
+    "ar": "الإعدادات | إدارة سابر فود"
   },
   "Manage your website information": {
     "it": "Gestisci le informazioni del tuo sito web",
@@ -1335,7 +1335,7 @@ window.SABER_I18N = {
   },
   "Reset Password | Saber Food": {
     "it": "Reimposta Password | Saber Food",
-    "ar": "إعادة تعيين كلمة المرور | صابر فود"
+    "ar": "إعادة تعيين كلمة المرور | سابر فود"
   },
   "Reset Password": {
     "it": "Reimposta Password",
@@ -1472,5 +1472,9 @@ window.SABER_I18N = {
   "Please fill in Company Name, Your Name and Email.": {
     "it": "Compila Nome Azienda, Il Tuo Nome ed Email.",
     "ar": "يرجى تعبئة اسم الشركة واسمك والبريد الإلكتروني."
+  },
+  "Toggle menu": {
+    "it": "Attiva/disattiva menu",
+    "ar": "تبديل القائمة"
   }
 };

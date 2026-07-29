@@ -29,7 +29,6 @@ db.channel("dashboard-products")
 
     if(payload.eventType==="INSERT"){
 
-        console.log("New Quote",payload.new);
 
     }
 

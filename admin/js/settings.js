@@ -92,7 +92,6 @@ async function saveSettings(e){
 
     e.preventDefault();
 
-    console.log("Save button clicked");
 
     if(selectedLogo){
 
@@ -127,9 +126,6 @@ async function saveSettings(e){
             .eq("key", key)
             .select();
 
-        console.log("Updating:", key);
-        console.log("Returned:", data);
-        console.log("Error:", error);
 
         if(error){
             console.error(error);

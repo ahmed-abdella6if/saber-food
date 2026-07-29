@@ -13,21 +13,17 @@ let quote = JSON.parse(localStorage.getItem("quote")) || [];
 
 async function loadProducts() {
 
-    console.log("Loading products...");
 
     const { data, error } = await db
         .from("products")
         .select("*")
         .order("id");
 
-    console.log("DATA:", data);
-    console.log("ERROR:", error);
 
     if (error) return;
 
     allProducts = data;
 
-    console.log("Products Loaded:", allProducts);
 
     renderProducts(allProducts);
 

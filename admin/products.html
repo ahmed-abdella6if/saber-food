@@ -25,6 +25,7 @@
 
 <div class="dashboard">
 <!-- ================= SIDEBAR ================= -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
 <aside class="sidebar">
 <div class="logo">
 <h2><span>Saber</span> Food</h2>
@@ -73,11 +74,16 @@
 <main class="content">
 <!-- ================= TOPBAR ================= -->
 <header class="topbar">
+<div class="topbar-left">
+<button aria-label="Toggle menu" class="menu-toggle" data-i18n-aria-label="Toggle menu" id="menuToggle">
+<i class="fa-solid fa-bars"></i>
+</button>
 <div>
 <h1 data-i18n="Products">Products</h1>
 <p data-i18n="Manage your wholesale product catalog">
-                    Manage your wholesale product catalog
-                </p>
+                        Manage your wholesale product catalog
+                    </p>
+</div>
 </div>
 <div class="topbar-actions">
 <input data-i18n-placeholder="Search products..." id="searchInput" placeholder="Search products..." type="text"/>
@@ -501,6 +507,7 @@
 <script src="../js/supabase.js"></script>
 <script src="js/auth.js"></script>
 <script src="js/products.js"></script>
+<script src="js/sidebar-toggle.js"></script>
 <script src="../js/i18n-data.js"></script>
 <script src="../js/i18n.js"></script>
 </body>

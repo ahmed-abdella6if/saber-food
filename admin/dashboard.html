@@ -25,6 +25,7 @@
 
 <div class="dashboard">
 <!-- SIDEBAR -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
 <aside class="sidebar">
 <div class="logo">
 <span>Saber</span> Food
@@ -77,8 +78,13 @@
 <!-- TOPBAR -->
 <header class="topbar">
 <div class="topbar-left">
+<button aria-label="Toggle menu" class="menu-toggle" data-i18n-aria-label="Toggle menu" id="menuToggle">
+<i class="fa-solid fa-bars"></i>
+</button>
+<div class="topbar-title">
 <h1 data-i18n="Dashboard">Dashboard</h1>
 <small id="currentDate"></small>
+</div>
 </div>
 <div class="topbar-right">
 <span id="liveClock"></span>
@@ -189,6 +195,7 @@
 <script src="js/logout.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="js/dashboard.js"></script>
+<script src="js/sidebar-toggle.js"></script>
 <script src="../js/i18n-data.js"></script>
 <script src="../js/i18n.js"></script>
 </body>
