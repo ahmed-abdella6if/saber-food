@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title data-i18n="Settings | Saber Food Admin">Settings | Saber Food Admin</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet"/>
+<link href="css/admin.css" rel="stylesheet"/>
+<link href="css/settings.css" rel="stylesheet"/>
+<link href="../css/i18n.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="lang-switcher" id="langSwitcher">
+<button aria-label="Change language" class="lang-switcher-toggle" id="langSwitcherToggle" type="button"><i class="fa-solid fa-globe"></i><span class="lang-switcher-current" id="langSwitcherCurrent">EN</span></button>
+<div class="lang-switcher-menu" id="langSwitcherMenu">
+<button data-lang="en" type="button">English</button>
+<button data-lang="it" type="button">Italiano</button>
+<button data-lang="ar" type="button">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+</div>
+</div>
+
+<div class="dashboard">
+<!-- SIDEBAR -->
+<aside class="sidebar">
+<div class="logo">
+<span>Saber</span> Food
+
+            <small data-i18n="Admin Portal">Admin Portal</small>
+</div>
+<ul>
+<li>
+<a href="dashboard.html">
+<i class="fa-solid fa-chart-line"></i>
+
+                    <span data-i18n="Dashboard">Dashboard</span>
+
+                </a>
+</li>
+<li>
+<a href="products.html">
+<i class="fa-solid fa-box"></i>
+
+                    <span data-i18n="Products">Products</span>
+
+                </a>
+</li>
+<li>
+<a href="requests.html">
+<i class="fa-solid fa-envelope"></i>
+
+                    <span data-i18n="Quote Requests">Quote Requests</span>
+
+                </a>
+</li>
+<li>
+<a href="analytics.html">
+<i class="fa-solid fa-chart-pie"></i>
+
+                    <span data-i18n="Analytics">Analytics</span>
+
+                </a>
+</li>
+<li class="active">
+<a href="settings.html">
+<i class="fa-solid fa-gear"></i>
+
+                    <span data-i18n="Settings">Settings</span>
+
+                </a>
+</li>
+<li>
+<button id="logoutBtn">
+<i class="fa-solid fa-right-from-bracket"></i>
+
+                    <span data-i18n="Logout">Logout</span>
+
+                </button>
+</li>
+</ul>
+</aside>
+<!-- MAIN CONTENT -->
+<main class="content">
+<!-- TOPBAR -->
+<header class="topbar">
+<div class="topbar-left">
+<h1 data-i18n="Settings">Settings</h1>
+<small data-i18n="Manage your website information">Manage your website information</small>
+</div>
+<div class="settings-actions">
+<button class="btn-save" form="settingsForm" id="saveSettings" type="submit">
+<i class="fa-solid fa-floppy-disk"></i>
+    <span data-i18n="Save Changes">Save Changes</span>
+</button>
+<button class="btn-secondary" data-i18n="Reset" id="resetSettings" type="button">
+
+    Reset
+
+</button>
+</div>
+</header>
+<form id="settingsForm">
+<!-- ================= GENERAL ================= -->
+<section class="panel">
+<div class="panel-header">
+<h2 data-i18n="General Information">General Information</h2>
+</div>
+<div class="settings-grid">
+<div class="form-group">
+<label data-i18n="Company Name">Company Name</label>
+<input id="company_name" type="text"/>
+</div>
+<div class="form-group">
+<label data-i18n="Website Title">Website Title</label>
+<input id="website_title" type="text"/>
+</div>
+<div class="form-group full">
+<label data-i18n="Website Description">Website Description</label>
+<textarea id="website_description" rows="4"></textarea>
+</div>
+</div>
+</section>
+<!-- ================= CONTACT ================= -->
+<section class="panel">
+<div class="panel-header">
+<h2 data-i18n="Contact Information">Contact Information</h2>
+</div>
+<div class="settings-grid">
+<div class="form-group">
+<label data-i18n="Email">Email</label>
+<input id="email" placeholder="sales@saberfood.it" type="email"/>
+</div>
+<div class="form-group">
+<label data-i18n="Phone">Phone</label>
+<input id="phone" placeholder="+39 XXX XXX XXXX" type="text"/>
+</div>
+<div class="form-group">
+<label data-i18n="WhatsApp">WhatsApp</label>
+<input id="whatsapp" placeholder="+39 XXX XXX XXXX" type="text"/>
+</div>
+<div class="form-group full">
+<label data-i18n="Business Address">Business Address</label>
+<input data-i18n-placeholder="Milan, Italy" id="address" placeholder="Milan, Italy" type="text"/>
+</div>
+</div>
+</section>
+<!-- ================= BRANDING ================= -->
+<section class="panel">
+<div class="panel-header">
+<h2 data-i18n="Branding">Branding</h2>
+</div>
+<div class="settings-grid">
+<div class="form-group full">
+<label data-i18n="Company Logo">Company Logo</label>
+<label class="upload-box">
+<input hidden="" id="logo" type="file"/>
+<i class="fa-solid fa-cloud-arrow-up"></i>
+<span data-i18n="Upload Logo">Upload Logo</span>
+</label>
+<img alt="Logo Preview" class="image-preview" data-i18n-alt="Logo Preview" id="logoPreview" src=""/>
+</div>
+</div>
+</section>
+<!-- ================= SOCIAL ================= -->
+</form>
+</main>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="../js/supabase.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/settings.js"></script>
+<script src="js/logout.js"></script>
+<script src="../js/i18n-data.js"></script>
+<script src="../js/i18n.js"></script>
+</body>
+</html>

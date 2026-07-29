@@ -1,0 +1,119 @@
+/* ==========================================================
+   Saber Food - i18n language switcher + RTL support
+   Additive stylesheet - does not modify any existing rules.
+   ========================================================== */
+
+.lang-switcher {
+    position: fixed;
+    top: 18px;
+    right: 18px;
+    z-index: 9999;
+    font-family: 'Poppins', sans-serif;
+}
+
+html[dir="rtl"] .lang-switcher {
+    right: auto;
+    left: 18px;
+}
+
+.lang-switcher-toggle {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 999px;
+    padding: 8px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #1a1a1a;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+.lang-switcher-toggle:hover {
+    background: #f5f5f5;
+}
+
+.lang-switcher-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    min-width: 140px;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+}
+
+html[dir="rtl"] .lang-switcher-menu {
+    right: auto;
+    left: 0;
+}
+
+.lang-switcher-menu.open {
+    display: flex;
+}
+
+.lang-switcher-menu button {
+    all: unset;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 10px 16px;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    color: #1a1a1a;
+    cursor: pointer;
+}
+
+.lang-switcher-menu button:hover {
+    background: #f0f0f0;
+}
+
+.lang-switcher-menu button.active {
+    font-weight: 700;
+    background: #f5f5f5;
+}
+
+/* ---------------- RTL layout adjustments ---------------- */
+/* Minimal, safe mirroring for Arabic - flips text direction
+   and horizontal alignment without altering component logic. */
+
+html[dir="rtl"] body {
+    direction: rtl;
+    text-align: right;
+}
+
+html[dir="rtl"] .navbar,
+html[dir="rtl"] .hero-buttons,
+html[dir="rtl"] .footer-content,
+html[dir="rtl"] .topbar,
+html[dir="rtl"] .topbar-right,
+html[dir="rtl"] .topbar-left,
+html[dir="rtl"] .admin-user {
+    direction: rtl;
+}
+
+html[dir="rtl"] .sidebar ul li a,
+html[dir="rtl"] .hero-features div,
+html[dir="rtl"] .input-box {
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 900px) {
+    .lang-switcher {
+        top: 10px;
+        right: 10px;
+    }
+    html[dir="rtl"] .lang-switcher {
+        left: 10px;
+    }
+    .lang-switcher-toggle {
+        padding: 7px 11px;
+        font-size: 12px;
+    }
+}

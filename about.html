@@ -1,393 +1,276 @@
 ```html
 <!DOCTYPE html>
+
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>About Us | Saber Food</title>
-
-<meta name="description"
-content="Learn more about Saber Food, a trusted wholesale supplier of premium Arabic & Halal food products serving businesses across Italy.">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
-<link rel="stylesheet" href="./css/style.css">
-<link rel="stylesheet" href="./css/about.css">
-
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title data-i18n="About Us | Saber Food">About Us | Saber Food</title>
+<meta content="Learn more about Saber Food, a trusted wholesale supplier of premium Arabic &amp; Halal food products serving businesses across Italy." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet"/>
+<link href="./css/style.css" rel="stylesheet"/>
+<link href="./css/about.css" rel="stylesheet"/>
+<link href="./css/i18n.css" rel="stylesheet"/>
 </head>
-
 <body>
+<div class="lang-switcher" id="langSwitcher">
+<button aria-label="Change language" class="lang-switcher-toggle" id="langSwitcherToggle" type="button"><i class="fa-solid fa-globe"></i><span class="lang-switcher-current" id="langSwitcherCurrent">EN</span></button>
+<div class="lang-switcher-menu" id="langSwitcherMenu">
+<button data-lang="en" type="button">English</button>
+<button data-lang="it" type="button">Italiano</button>
+<button data-lang="ar" type="button">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+</div>
+</div>
 
 <!-- ================= NAVBAR ================= -->
-
 <nav class="navbar">
-
 <div class="logo">
 <span>Saber</span> Food
 </div>
-
 <ul class="nav-links">
-
-<li><a href="index.html">Home</a></li>
-
-<li><a href="about.html" class="active">About</a></li>
-
-<li><a href="products.html">Products</a></li>
-
-<li><a href="brands.html">Brands</a></li>
-
-<li><a href="faq.html">FAQ</a></li>
-
-<li><a href="contact.html">Contact</a></li>
-
+<li><a data-i18n="Home" href="index.html">Home</a></li>
+<li><a class="active" data-i18n="About" href="about.html">About</a></li>
+<li><a data-i18n="Products" href="products.html">Products</a></li>
+<li><a data-i18n="Brands" href="brands.html">Brands</a></li>
+<li><a data-i18n="FAQ" href="faq.html">FAQ</a></li>
+<li><a data-i18n="Contact" href="contact.html">Contact</a></li>
 </ul>
-
-<a href="contact.html" class="btn-nav">
+<a class="btn-nav" data-i18n="Request Quote" href="contact.html">
 Request Quote
 </a>
 </nav>
-
 <!-- ================= HERO ================= -->
-
 <section class="about-hero">
-
 <div class="hero-overlay"></div>
-
 <div class="hero-content">
-
-<span class="hero-tag">
+<span class="hero-tag" data-i18n="ABOUT SABER FOOD">
 ABOUT SABER FOOD
 </span>
+<h1 data-i18n="A Trusted Wholesale Partner for Arabic &amp; Halal Food in Italy">
 
-<h1>
-
-A Trusted Wholesale Partner for Arabic & Halal Food in Italy
+A Trusted Wholesale Partner for Arabic &amp; Halal Food in Italy
 
 </h1>
-
-<p>
+<p data-i18n="Supplying restaurants, supermarkets, grocery stores, food distributors and hospitality businesses with carefully selected Arabic and Halal food products.">
 
 Supplying restaurants, supermarkets, grocery stores, food distributors and hospitality businesses with carefully selected Arabic and Halal food products.
 
 </p>
-
 </div>
-
 </section>
-
 <!-- ================= OUR STORY ================= -->
-
 <section class="story">
-
 <div class="story-image">
-
-<img src="./images/Gemini_Generated_Image_2w9cnq2w9cnq2w9c.png" alt="Saber Food Warehouse">
-
+<img alt="Saber Food Warehouse" data-i18n-alt="Saber Food Warehouse" src="./images/Gemini_Generated_Image_2w9cnq2w9cnq2w9c.png"/>
 </div>
-
 <div class="story-content">
-
-<span class="section-subtitle">
+<span class="section-subtitle" data-i18n="WHO WE ARE">
 
 WHO WE ARE
 
 </span>
-
-<h2>
+<h2 data-i18n="Building Long-Term Business Partnerships">
 
 Building Long-Term Business Partnerships
 
 </h2>
-
-<p>
+<p data-i18n="Saber Food is a wholesale supplier specializing in premium Arabic and Halal food products for businesses throughout Italy. We work with restaurants, supermarkets, grocery stores, catering companies and food distributors who value quality, consistency and reliable supply.">
 
 Saber Food is a wholesale supplier specializing in premium Arabic and Halal food products for businesses throughout Italy. We work with restaurants, supermarkets, grocery stores, catering companies and food distributors who value quality, consistency and reliable supply.
 
 </p>
-
-<p>
+<p data-i18n="By working with trusted manufacturers and suppliers, we provide carefully selected products that meet the expectations of professional kitchens and retail businesses while building long-term relationships based on trust and reliability.">
 
 By working with trusted manufacturers and suppliers, we provide carefully selected products that meet the expectations of professional kitchens and retail businesses while building long-term relationships based on trust and reliability.
 
 </p>
-
 </div>
-
 </section>
-
 <!-- ================= MISSION ================= -->
-
 <section class="mission">
-
 <div class="mission-card">
-
 <i class="fa-solid fa-bullseye"></i>
-
-<h3>
+<h3 data-i18n="Our Mission">
 
 Our Mission
 
 </h3>
-
-<p>
+<p data-i18n="To provide businesses across Italy with authentic Arabic and Halal food products through reliable sourcing, consistent quality and professional wholesale service.">
 
 To provide businesses across Italy with authentic Arabic and Halal food products through reliable sourcing, consistent quality and professional wholesale service.
 
 </p>
-
 </div>
-
 <div class="mission-card">
-
 <i class="fa-solid fa-eye"></i>
-
-<h3>
+<h3 data-i18n="Our Vision">
 
 Our Vision
 
 </h3>
-
-<p>
+<p data-i18n="To become one of Italy's trusted wholesale partners for Arabic and Halal food by building lasting relationships with businesses that value quality and reliability.">
 
 To become one of Italy's trusted wholesale partners for Arabic and Halal food by building lasting relationships with businesses that value quality and reliability.
 
 </p>
-
 </div>
-
 </section>
-
 <!-- ================= CORE VALUES ================= -->
-
 <section class="values">
-
 <div class="section-title">
-
-<h2>Our Core Values</h2>
-
-<p>The principles that guide every business relationship.</p>
-
+<h2 data-i18n="Our Core Values">Our Core Values</h2>
+<p data-i18n="The principles that guide every business relationship.">The principles that guide every business relationship.</p>
 </div>
-
 <div class="values-grid">
-
 <div class="value-card">
 <i class="fa-solid fa-award"></i>
-<h3>Quality</h3>
-<p>We carefully select products that meet professional standards.</p>
+<h3 data-i18n="Quality">Quality</h3>
+<p data-i18n="We carefully select products that meet professional standards.">We carefully select products that meet professional standards.</p>
 </div>
-
 <div class="value-card">
 <i class="fa-solid fa-handshake"></i>
-<h3>Reliability</h3>
-<p>Building dependable partnerships through consistent service.</p>
+<h3 data-i18n="Reliability">Reliability</h3>
+<p data-i18n="Building dependable partnerships through consistent service.">Building dependable partnerships through consistent service.</p>
 </div>
-
 <div class="value-card">
 <i class="fa-solid fa-scale-balanced"></i>
-<h3>Integrity</h3>
-<p>Honest business practices and transparent communication.</p>
+<h3 data-i18n="Integrity">Integrity</h3>
+<p data-i18n="Honest business practices and transparent communication.">Honest business practices and transparent communication.</p>
 </div>
-
 <div class="value-card">
 <i class="fa-solid fa-users"></i>
-<h3>Partnership</h3>
-<p>Long-term relationships are at the heart of our business.</p>
+<h3 data-i18n="Partnership">Partnership</h3>
+<p data-i18n="Long-term relationships are at the heart of our business.">Long-term relationships are at the heart of our business.</p>
 </div>
-
 <div class="value-card">
 <i class="fa-solid fa-seedling"></i>
-<h3>Authenticity</h3>
-<p>Supplying genuine Arabic & Halal food products.</p>
+<h3 data-i18n="Authenticity">Authenticity</h3>
+<p data-i18n="Supplying genuine Arabic &amp; Halal food products.">Supplying genuine Arabic &amp; Halal food products.</p>
 </div>
-
 <div class="value-card">
 <i class="fa-solid fa-headset"></i>
-<h3>Professional Support</h3>
-<p>Dedicated assistance for wholesale customers.</p>
+<h3 data-i18n="Professional Support">Professional Support</h3>
+<p data-i18n="Dedicated assistance for wholesale customers.">Dedicated assistance for wholesale customers.</p>
 </div>
-
 </div>
-
 </section>
-
 <!-- ================= INDUSTRIES ================= -->
-
 <section class="industries">
-
 <div class="section-title">
-
-<h2>Industries We Serve</h2>
-
-<p>Supporting businesses throughout Italy.</p>
-
+<h2 data-i18n="Industries We Serve">Industries We Serve</h2>
+<p data-i18n="Supporting businesses throughout Italy.">Supporting businesses throughout Italy.</p>
 </div>
-
 <div class="industry-grid">
-
 <div class="industry-card">
 <i class="fa-solid fa-utensils"></i>
-<h3>Restaurants</h3>
+<h3 data-i18n="Restaurants">Restaurants</h3>
 </div>
-
 <div class="industry-card">
 <i class="fa-solid fa-store"></i>
-<h3>Grocery Stores</h3>
+<h3 data-i18n="Grocery Stores">Grocery Stores</h3>
 </div>
-
 <div class="industry-card">
 <i class="fa-solid fa-cart-shopping"></i>
-<h3>Supermarkets</h3>
+<h3 data-i18n="Supermarkets">Supermarkets</h3>
 </div>
-
 <div class="industry-card">
 <i class="fa-solid fa-drumstick-bite"></i>
-<h3>Halal Butchers</h3>
+<h3 data-i18n="Halal Butchers">Halal Butchers</h3>
 </div>
-
 <div class="industry-card">
 <i class="fa-solid fa-hotel"></i>
-<h3>Hotels</h3>
+<h3 data-i18n="Hotels">Hotels</h3>
 </div>
-
 <div class="industry-card">
 <i class="fa-solid fa-truck-ramp-box"></i>
-<h3>Food Distributors</h3>
+<h3 data-i18n="Food Distributors">Food Distributors</h3>
 </div>
-
 </div>
-
 </section>
-
 <!-- ================= WHY US ================= -->
-
 <section class="why-us">
-
 <div class="section-title">
-
-<h2>Why Businesses Choose Saber Food</h2>
-
+<h2 data-i18n="Why Businesses Choose Saber Food">Why Businesses Choose Saber Food</h2>
 </div>
-
 <div class="cards">
-
 <div class="card">
 <i class="fa-solid fa-box-open"></i>
-<h3>Carefully Selected Products</h3>
-<p>Products chosen to meet professional wholesale requirements.</p>
+<h3 data-i18n="Carefully Selected Products">Carefully Selected Products</h3>
+<p data-i18n="Products chosen to meet professional wholesale requirements.">Products chosen to meet professional wholesale requirements.</p>
 </div>
-
 <div class="card">
 <i class="fa-solid fa-building"></i>
-<h3>Wholesale Focus</h3>
-<p>Serving businesses rather than individual consumers.</p>
+<h3 data-i18n="Wholesale Focus">Wholesale Focus</h3>
+<p data-i18n="Serving businesses rather than individual consumers.">Serving businesses rather than individual consumers.</p>
 </div>
-
 <div class="card">
 <i class="fa-solid fa-comments"></i>
-<h3>Professional Communication</h3>
-<p>Responsive support for business inquiries and quotations.</p>
+<h3 data-i18n="Professional Communication">Professional Communication</h3>
+<p data-i18n="Responsive support for business inquiries and quotations.">Responsive support for business inquiries and quotations.</p>
 </div>
-
 <div class="card">
 <i class="fa-solid fa-link"></i>
-<h3>Long-Term Partnerships</h3>
-<p>Building trusted relationships with every customer.</p>
+<h3 data-i18n="Long-Term Partnerships">Long-Term Partnerships</h3>
+<p data-i18n="Building trusted relationships with every customer.">Building trusted relationships with every customer.</p>
 </div>
-
 </div>
-
 </section>
-
 <!-- ================= CTA ================= -->
-
 <section class="contact">
-
-<h2>Looking for a Wholesale Supplier?</h2>
-
-<p>
+<h2 data-i18n="Looking for a Wholesale Supplier?">Looking for a Wholesale Supplier?</h2>
+<p data-i18n="Contact our sales team to discuss your business needs and request a quotation.">
 
 Contact our sales team to discuss your business needs and request a quotation.
 
 </p>
-
-<a href="contact.html" class="btn-primary">
+<a class="btn-primary" data-i18n="Contact Sales" href="contact.html">
 
 Contact Sales
 
 </a>
-
 </section>
-
 <!-- ================= FOOTER ================= -->
-
 <footer>
-
 <div class="footer-content">
-
 <div>
+<h3 data-i18n="Saber Food">Saber Food</h3>
+<p data-i18n="Premium Arabic &amp; Halal Food Wholesale Supplier in Italy.">
 
-<h3>Saber Food</h3>
-
-<p>
-
-Premium Arabic & Halal Food Wholesale Supplier in Italy.
+Premium Arabic &amp; Halal Food Wholesale Supplier in Italy.
 
 </p>
-
 </div>
-
 <div>
-
-<h4>Quick Links</h4>
-
-<a href="index.html">Home</a>
-
-<a href="about.html">About</a>
-
-<a href="products.html">Products</a>
-
-<a href="brands.html">Brands</a>
-
-<a href="contact.html">Contact</a>
-
+<h4 data-i18n="Quick Links">Quick Links</h4>
+<a data-i18n="Home" href="index.html">Home</a>
+<a data-i18n="About" href="about.html">About</a>
+<a data-i18n="Products" href="products.html">Products</a>
+<a data-i18n="Brands" href="brands.html">Brands</a>
+<a data-i18n="Contact" href="contact.html">Contact</a>
 </div>
-
 <div>
-
-<h4>Business Contact</h4>
-
-<p>Milan, Italy</p>
-
-<p>sales@saberfood.it</p>
-
-<p>+39 XXX XXX XXXX</p>
-
+<h4 data-i18n="Business Contact">Business Contact</h4>
+<a class="company-email"></a>
+<a class="company-phone"></a>
+<p class="company-address"></p>
 </div>
-
 </div>
-
-<hr>
-
-<p class="copyright">
+<hr/>
+<p class="copyright" data-i18n="© 2026 Saber Food. All Rights Reserved.">
 
 © 2026 Saber Food. All Rights Reserved.
 
 </p>
-
 </footer>
-
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="./js/supabase.js"></script>
+<script src="./js/settings-loader.js"></script>
 <script src="./js/main.js"></script>
+<script src="./js/i18n-data.js"></script>
+<script src="./js/i18n.js"></script>
 </body>
-
 </html>
 ```

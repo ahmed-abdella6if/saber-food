@@ -1,640 +1,420 @@
 <!DOCTYPE html>
+
 <html lang="en">
-
 <head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<title data-i18n="Products | Saber Food">
 
-<meta charset="UTF-8">
+Products | Saber Food
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Products | Saber Food</title>
-
-<meta name="description"
-content="Explore Saber Food wholesale Arabic and Halal food products available for restaurants, supermarkets and businesses in Italy.">
-
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
-
-<link rel="stylesheet" href="css/style.css">
-
-<link rel="stylesheet" href="css/products.css">
-
-
+</title>
+<meta content="Wholesale Arabic &amp; Halal Food Products in Italy." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+<link href="css/products.css" rel="stylesheet"/>
+<link href="./css/i18n.css" rel="stylesheet"/>
 </head>
-
-
 <body>
-
+<div class="lang-switcher" id="langSwitcher">
+<button aria-label="Change language" class="lang-switcher-toggle" id="langSwitcherToggle" type="button"><i class="fa-solid fa-globe"></i><span class="lang-switcher-current" id="langSwitcherCurrent">EN</span></button>
+<div class="lang-switcher-menu" id="langSwitcherMenu">
+<button data-lang="en" type="button">English</button>
+<button data-lang="it" type="button">Italiano</button>
+<button data-lang="ar" type="button">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+</div>
+</div>
 
 <!-- ================= NAVBAR ================= -->
-
-
 <nav class="navbar">
-
-
 <div class="logo">
-
 <span>Saber</span> Food
 
 </div>
-
-
 <ul class="nav-links">
-
 <li>
-<a href="index.html">
+<a data-i18n="Home" href="index.html">
+
 Home
+
 </a>
 </li>
-
-
 <li>
-<a href="about.html">
+<a data-i18n="About" href="about.html">
+
 About
+
 </a>
 </li>
-
-
 <li>
-<a class="active" href="products.html">
+<a class="active" data-i18n="Products" href="products.html">
+
 Products
+
 </a>
 </li>
-
-
 <li>
-<a href="brands.html">
+<a data-i18n="Brands" href="brands.html">
+
 Brands
+
 </a>
 </li>
-
-
 <li>
-<a href="faq.html">
+<a data-i18n="FAQ" href="faq.html">
+
 FAQ
+
 </a>
 </li>
-
-
 <li>
-<a href="contact.html">
+<a data-i18n="Contact" href="contact.html">
+
 Contact
+
 </a>
 </li>
-
 </ul>
-
-
-
-<a href="contact.html" class="btn-nav">
+<div class="nav-actions">
+<a class="btn-nav" data-i18n="Contact Sales" href="contact.html">
 
 Contact Sales
 
 </a>
-
-
+</div>
 </nav>
-
-
-
 <!-- ================= HERO ================= -->
-
-
 <section class="products-hero">
-
-
-<div class="products-hero-content">
-
-
-<span class="hero-tag">
+<div class="hero-overlay"></div>
+<div class="hero-content">
+<div class="hero-badge" data-i18n="WHOLESALE PRODUCTS">
 
 WHOLESALE PRODUCTS
 
-</span>
+</div>
+<h1 data-i18n="Premium Arabic &amp; Halal Food Products">
 
-
-<h1>
-
-Premium Arabic & Halal Food Products
+Premium Arabic &amp; Halal Food Products
 
 </h1>
+<p data-i18n="Supplying restaurants, supermarkets, grocery stores and distributors throughout Italy with premium quality food products.">
 
-
-<p>
-
-A carefully selected range of products supplied to restaurants, supermarkets, grocery stores and food businesses across Italy.
+Supplying restaurants, supermarkets, grocery stores and distributors throughout Italy with premium quality food products.
 
 </p>
+<div class="hero-buttons">
+<a class="btn-primary" data-i18n="Browse Products" href="#products">
 
-
-</div>
-
-
-</section>
-
-
-
-<!-- ================= CATEGORY FILTER ================= -->
-
-
-<section class="products-section">
-
-
-<div class="section-title">
-
-
-<h2>
-
-Our Product Categories
-
-</h2>
-
-
-<p>
-
-Browse our wholesale product range.
-
-</p>
-
-
-</div>
-
-
-
-<div class="product-filters">
-
-
-<button class="filter-btn active" data-filter="all">
-
-All
-
-</button>
-
-
-<button class="filter-btn" data-filter="rice">
-
-Rice
-
-</button>
-
-
-<button class="filter-btn" data-filter="meat">
-
-Meat
-
-</button>
-
-
-<button class="filter-btn" data-filter="spices">
-
-Spices
-
-</button>
-
-
-<button class="filter-btn" data-filter="canned">
-
-Canned Food
-
-</button>
-
-
-<button class="filter-btn" data-filter="sweets">
-
-Sweets
-
-</button>
-
-
-</div>
-
-
-<div class="product-grid">
-
-
-<!-- PRODUCT CARD -->
-
-
-<div class="product-card" data-category="rice">
-
-
-<img src="images/products/rice.jpg"
-alt="Rice Products">
-
-
-<div class="product-info">
-
-
-<span>
-
-Rice
-
-</span>
-
-
-<h3>
-
-Premium Basmati Rice
-
-</h3>
-
-
-<p>
-
-High quality rice suitable for restaurants and supermarkets.
-
-</p>
-
-
-<a href="contact.html" class="btn-primary">
-
-Request Quote
+Browse Products
 
 </a>
-
-
-</div>
-
-
-</div>
-
-
-
-<div class="product-card" data-category="meat">
-
-
-<img src="images/products/meat.jpg"
-alt="Halal Meat">
-
-
-<div class="product-info">
-
-
-<span>
-
-Meat
-
-</span>
-
-
-<h3>
-
-Halal Frozen Meat
-
-</h3>
-
-
-<p>
-
-Reliable halal meat products for professional kitchens.
-
-</p>
-
-
-<a href="contact.html" class="btn-primary">
-
-Request Quote
-
-</a>
-
-
-</div>
-
-
-</div>
-<!-- PRODUCT CARD -->
-
-<div class="product-card" data-category="spices">
-
-
-<img src="images/products/spices.jpg"
-alt="Arabic Spices">
-
-
-<div class="product-info">
-
-
-<span>
-
-Spices
-
-</span>
-
-
-<h3>
-
-Authentic Arabic Spices
-
-</h3>
-
-
-<p>
-
-Premium spices selected for restaurants and food businesses.
-
-</p>
-
-
-<a href="contact.html" class="btn-primary">
-
-Request Quote
-
-</a>
-
-
-</div>
-
-
-</div>
-
-
-
-
-<div class="product-card" data-category="canned">
-
-
-<img src="images/products/canned.jpg"
-alt="Canned Food">
-
-
-<div class="product-info">
-
-
-<span>
-
-Canned Food
-
-</span>
-
-
-<h3>
-
-Arabic Canned Products
-
-</h3>
-
-
-<p>
-
-A wide selection of quality canned food products.
-
-</p>
-
-
-<a href="contact.html" class="btn-primary">
-
-Request Quote
-
-</a>
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-<div class="product-card" data-category="sweets">
-
-
-<img src="images/products/sweets.jpg"
-alt="Arabic Sweets">
-
-
-<div class="product-info">
-
-
-<span>
-
-Sweets
-
-</span>
-
-
-<h3>
-
-Traditional Arabic Sweets
-
-</h3>
-
-
-<p>
-
-Authentic sweets suitable for stores and hospitality businesses.
-
-</p>
-
-
-<a href="contact.html" class="btn-primary">
-
-Request Quote
-
-</a>
-
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-<!-- ================= BUSINESS CTA ================= -->
-
-
-<section class="products-cta">
-
-
-<h2>
-
-Need Wholesale Supply?
-
-</h2>
-
-
-<p>
-
-Contact our sales team and discuss your business requirements.
-
-</p>
-
-
-<a href="contact.html" class="btn-secondary">
+<a class="btn-secondary" data-i18n="Contact Sales" href="contact.html">
 
 Contact Sales
 
 </a>
-
-
+</div>
+</div>
 </section>
+<!-- ================= SEARCH ================= -->
+<!-- ================= ALL PRODUCTS ================= -->
+<!-- ================= QUOTE DRAWER ================= -->
+<aside class="quote-drawer" id="quoteDrawer">
+<!-- Header -->
+<div class="quote-header">
+<h2 data-i18n="Your Quote">Your Quote</h2>
+<button class="close-drawer" id="closeQuoteDrawer">
+<i class="fa-solid fa-xmark"></i>
+</button>
+</div>
+<!-- Body -->
+<div class="quote-body">
+<!-- LEFT SIDE -->
+<div class="quote-products">
+<div class="quote-section-title" data-i18n="Products">
 
+                Products
 
+            </div>
+<div id="quoteItems">
+<div class="empty-quote">
+<i class="fa-solid fa-box-open"></i>
+<h3 data-i18n="Your quote is empty">Your quote is empty</h3>
+<p data-i18n="Start adding products and they'll appear here.">
 
+                        Start adding products and they'll appear here.
 
+                    </p>
+</div>
+</div>
+</div>
+<!-- RIGHT SIDE -->
+<div class="quote-information">
+<div class="quote-section-title" data-i18n="Company Information">
 
-<!-- ================= FOOTER ================= -->
+                Company Information
 
+            </div>
+<form class="quote-form" id="quoteForm">
+<input data-i18n-placeholder="Company Name *" id="companyName" placeholder="Company Name *" type="text"/>
+<input data-i18n-placeholder="Contact Person" id="contactName" placeholder="Contact Person" type="text"/>
+<input data-i18n-placeholder="Email" id="email" placeholder="Email" type="email"/>
+<input data-i18n-placeholder="Phone Number" id="phone" placeholder="Phone Number" type="tel"/>
+<input data-i18n-placeholder="Country" id="country" placeholder="Country" type="text"/>
+<textarea data-i18n-placeholder="Additional Notes" id="notes" placeholder="Additional Notes" rows="5"></textarea>
+</form>
+</div>
+</div>
+<!-- Footer -->
+<div class="quote-footer">
+<button class="btn-primary" id="submitQuote">
+<i class="fa-solid fa-paper-plane"></i>
 
-<footer>
+    <span data-i18n="Submit Quote">Submit Quote</span>
 
+</button>
+</div>
+</aside>
+<div class="drawer-overlay" id="drawerOverlay">
+</div>
+<!-- ================= PRODUCT DETAILS MODAL ================= -->
+<div class="product-modal" id="productModal">
+<div class="modal-overlay">
+</div>
+<div class="modal-box">
+<div class="modal-image">
+<img alt="Product" data-i18n-alt="Product" id="modalImage" src=""/>
+</div>
+<div class="modal-content">
+<span class="modal-category" data-i18n="Category" id="modalCategory">
 
-<div class="footer-content">
+Category
 
+</span>
+<h2 data-i18n="Product Name" id="modalTitle">
 
+Product Name
+
+</h2>
+<p data-i18n="Product description..." id="modalDescription">
+
+Product description...
+
+</p>
+<div class="modal-info">
 <div>
+<strong data-i18n="Brand">
 
+Brand
 
-<h3>
+</strong>
+<span id="modalBrand">
+
+—
+
+</span>
+</div>
+<div>
+<strong data-i18n="Origin">
+
+Origin
+
+</strong>
+<span id="modalOrigin">
+
+—
+
+</span>
+</div>
+<div>
+<strong data-i18n="Availability">
+
+Availability
+
+</strong>
+<span id="modalAvailability">
+
+—
+
+</span>
+</div>
+</div>
+<div class="hero-buttons">
+<a class="btn-primary" data-i18n="Request Quote" href="contact.html">
+
+Request Quote
+
+</a>
+<button class="btn-secondary" data-i18n="Close" id="closeModal">
+
+Close
+
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- ================= PRODUCTS ================= -->
+<section class="products-section" id="products">
+<div class="container">
+<div class="section-title">
+<h2 data-i18n="Our Products">Our Products</h2>
+<p data-i18n="Browse, search and request wholesale products for your business.">
+Browse, search and request wholesale products for your business.
+</p>
+</div>
+<div class="toolbar-top">
+<div class="search-box">
+<i class="fa-solid fa-magnifying-glass"></i>
+<input data-i18n-placeholder="Search products..." id="searchInput" placeholder="Search products..." type="text"/>
+</div>
+<button class="quote-button" id="quoteButton">
+<i class="fa-solid fa-file-lines"></i>
+
+<span data-i18n="Quote">Quote</span>
+
+<span class="quote-count" id="quoteCount">
+
+0
+
+</span>
+</button>
+</div>
+<div class="filters">
+<button class="filter-btn active" data-filter="all" data-i18n="All">
+All
+</button>
+<button class="filter-btn" data-filter="rice" data-i18n="Rice">
+Rice
+</button>
+<button class="filter-btn" data-filter="meat" data-i18n="Meat">
+Meat
+</button>
+<button class="filter-btn" data-filter="spices" data-i18n="Spices">
+Spices
+</button>
+<button class="filter-btn" data-filter="oil" data-i18n="Oil">
+Oil
+</button>
+</div>
+<div class="products-grid" id="productsGrid">
+</div>
+</div>
+</section>
+<!-- ================= CTA ================= -->
+<section class="products-cta">
+<div class="container">
+<h2 data-i18n="Looking for a Reliable Wholesale Supplier?">
+
+Looking for a Reliable Wholesale Supplier?
+
+</h2>
+<p data-i18n="We supply restaurants, supermarkets, distributors and food businesses across Italy with premium Arabic &amp; Halal products.">
+
+We supply restaurants, supermarkets, distributors and food businesses across Italy with premium Arabic &amp; Halal products.
+
+</p>
+<div class="cta-buttons">
+<a class="btn-primary" data-i18n="Contact Sales" href="contact.html">
+
+Contact Sales
+
+</a>
+<a class="btn-secondary" data-i18n="Request a Quote" href="quote.html">
+
+Request a Quote
+
+</a>
+</div>
+</div>
+</section>
+<!-- ================= FOOTER ================= -->
+<footer>
+<div class="footer-content">
+<div>
+<h3 data-i18n="Saber Food">
 
 Saber Food
 
 </h3>
+<p data-i18n="Premium Arabic &amp; Halal Food Wholesale Supplier serving restaurants, supermarkets and food businesses across Italy.">
 
-
-<p>
-
-Arabic & Halal food wholesale supplier serving businesses in Italy.
+Premium Arabic &amp; Halal Food Wholesale Supplier serving restaurants, supermarkets and food businesses across Italy.
 
 </p>
-
-
 </div>
-
-
-
-
 <div>
-
-
-<h4>
+<h4 data-i18n="Quick Links">
 
 Quick Links
 
 </h4>
-
-
-<a href="index.html">
+<a data-i18n="Home" href="index.html">
 
 Home
 
 </a>
-
-
-<a href="about.html">
+<a data-i18n="About" href="about.html">
 
 About
 
 </a>
-
-
-<a href="products.html">
+<a data-i18n="Products" href="products.html">
 
 Products
 
 </a>
+<a data-i18n="Brands" href="brands.html">
 
+Brands
 
-<a href="contact.html">
+</a>
+<a data-i18n="FAQ" href="faq.html">
+
+FAQ
+
+</a>
+<a data-i18n="Contact" href="contact.html">
 
 Contact
 
 </a>
-
-
 </div>
-
-
-
-
-
 <div>
-
-
-<h4>
+<h4 data-i18n="Business Contact">
 
 Business Contact
 
 </h4>
-
-
-<p>
-
-Milan, Italy
-
-</p>
-
-
-<p>
-
-sales@saberfood.it
-
-</p>
-
-
-<p>
-
-+39 XXX XXX XXXX
-
-</p>
-
-
+<a class="company-email"></a>
+<a class="company-phone"></a>
+<p class="company-address"></p>
 </div>
-
-
-
 </div>
-
-
-<hr>
-
-
-<p class="copyright">
+<hr/>
+<p class="copyright" data-i18n="© 2026 Saber Food. All Rights Reserved.">
 
 © 2026 Saber Food. All Rights Reserved.
 
 </p>
-
-
 </footer>
-
-
-
-
-
-<a href="#"
-class="whatsapp-btn">
-
+<!-- ================= FLOAT BUTTONS ================= -->
+<a class="whatsapp-btn" href="#">
 <i class="fa-brands fa-whatsapp"></i>
-
 </a>
-
-
-
-
+<button class="back-to-top" id="backToTop">
+<i class="fa-solid fa-arrow-up"></i>
+</button>
+<!-- ================= SCRIPTS ================= -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/supabase.js"></script>
+<script src="./js/settings-loader.js"></script>
 <script src="js/main.js"></script>
-
 <script src="js/products.js"></script>
-
-
+<script src="./js/i18n-data.js"></script>
+<script src="./js/i18n.js"></script>
 </body>
-
 </html>
