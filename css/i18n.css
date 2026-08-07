@@ -12,8 +12,8 @@
 }
 @media(max-width:900px){
     .lang-switcher{
-        right: 58px;
-        top: 22px;
+        top: 95px;
+        right: 14px;
     }
 }
 @media(min-width:901px){
