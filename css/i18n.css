@@ -10,6 +10,16 @@
     z-index: 9999;
     font-family: 'Poppins', sans-serif;
 }
+@media(max-width:900px){
+    .lang-switcher{
+        right: 64px;
+    }
+}
+@media(min-width:901px){
+    .lang-switcher{
+        right: 0px;
+    }
+}
 
 html[dir="rtl"] .lang-switcher {
     right: auto;
