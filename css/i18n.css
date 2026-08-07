@@ -12,7 +12,8 @@
 }
 @media(max-width:900px){
     .lang-switcher{
-        nav-left: 100px;
+        right: 58px;
+        top: 22px;
     }
 }
 @media(min-width:901px){

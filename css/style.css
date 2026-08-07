@@ -827,3 +827,10 @@ padding-left:0!important;
     font-weight: 700;
     color: var(--dark-color);
 }
+
+@media(max-width:900px){
+    .lang-switcher{
+        right: 58px;
+        top: 22px;
+    }
+}
