@@ -579,16 +579,12 @@ async function submitQuote() {
 }
 document
     .getElementById("submitQuote")
-    .addEventListener("click", submitQuote);
+    ?.addEventListener("click", submitQuote);
 
-    document
+document
     .getElementById("quoteButton")
-    .addEventListener("click", openQuoteDrawer);
+    ?.addEventListener("click", openQuoteDrawer);
 
 document
     .getElementById("closeQuoteDrawer")
-    .addEventListener("click", closeQuoteDrawer);
-
-    document
-    .getElementById("submitQuote")
-    .addEventListener("click", submitQuote);
+    ?.addEventListener("click", closeQuoteDrawer);

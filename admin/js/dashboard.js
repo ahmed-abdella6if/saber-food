@@ -3,6 +3,16 @@
 ===================================== */
 
 /* ---------- CURRENT DATE ---------- */
+function escapeHtml(value) {
+    return String(value ?? "").replace(/[&<>"']/g, (char) => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#39;"
+    }[char]));
+}
+
 let products = [];
 let quotes = [];
 
@@ -122,7 +132,7 @@ function renderRecentQuotes(){
 
         <tr>
 
-            <td>${q.company_name}</td>
+            <td>${escapeHtml(q.company_name)}</td>
 
             <td>${Array.isArray(q.products) ? q.products.length : 0} Products</td>
 

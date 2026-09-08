@@ -1,3 +1,13 @@
+function escapeHtml(value) {
+    return String(value ?? "").replace(/[&<>"']/g, (char) => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#39;"
+    }[char]));
+}
+
 let quotes = [];
 let filteredQuotes = [];
 const drawer = document.getElementById("requestDrawer");
@@ -68,11 +78,11 @@ function renderQuotes(list){
 
             <td>#${q.id}</td>
 
-            <td>${q.company_name}</td>
+            <td>${escapeHtml(q.company_name)}</td>
 
-            <td>${q.contact_name || "-"}</td>
+            <td>${escapeHtml(q.contact_name || "-")}</td>
 
-            <td>${q.country || "-"}</td>
+            <td>${escapeHtml(q.country || "-")}</td>
 
             <td>${Array.isArray(q.products) ? q.products.length : 0} Products</td>
 
@@ -249,9 +259,9 @@ function viewQuote(id){
             productsContainer.innerHTML += `
                 <div class="drawer-product">
 
-                    <strong>${product.name}</strong>
+                    <strong>${escapeHtml(product.name)}</strong>
 
-                    <span>Qty: ${product.qty}</span>
+                    <span>Qty: ${escapeHtml(product.qty)}</span>
 
                 </div>
             `;
